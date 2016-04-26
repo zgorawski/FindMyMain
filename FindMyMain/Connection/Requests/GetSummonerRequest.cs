@@ -1,14 +1,14 @@
-﻿using System;
+﻿using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using RestSharp;
 
 namespace FindMyMain.Connection.Requests
 {
-    public class RecentGamesRequest : IAPIRequest
+    public class GetSummonerRequest : IAPIRequest
     {
-        public RecentGamesRequest(LolRegion region, long summonerId)
+        public GetSummonerRequest(LolRegion region, long summonerId)
         {
             this.region = Enum.GetName(typeof(LolRegion), region);
             this.summonerId = summonerId;
@@ -31,7 +31,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return $"/api/lol/{region}/v1.3/game/by-summoner/{summonerId}/recent";
+                return $"/api/lol/{region}/v1.4/summoner/{summonerId}";
             }
         }
 
@@ -42,6 +42,7 @@ namespace FindMyMain.Connection.Requests
                 return Method.GET;
             }
         }
+
 
         public Dictionary<string, object> parameters
         {

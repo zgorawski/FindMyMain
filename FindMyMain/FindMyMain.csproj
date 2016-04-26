@@ -171,6 +171,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Connection\Requests\GameVersionRequest.cs" />
+    <Compile Include="Connection\Requests\GetSummonerRequest.cs" />
     <Compile Include="Connection\Requests\IAPIRequest.cs" />
     <Compile Include="Connection\Requests\RecentGamesRequest.cs" />
     <Compile Include="Connection\RiotAPIConnection.cs" />
@@ -183,6 +184,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Model\Game.cs" />
     <Compile Include="Model\LolRegion.cs" />
+    <Compile Include="Model\Summoner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

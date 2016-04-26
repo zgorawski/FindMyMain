@@ -32,9 +32,21 @@ namespace FindMyMain.Controllers
             if (recentGamesResult.isSuccess)
             {
                 var randomFellow = recentGamesResult.value.RandomFellowPlayer();
-                int aa = 0;
+                ViewBag.FellowId = randomFellow.summonerId;
             }
-            
+
+            var summonerRequest = new GetSummonerRequest(LolRegion.eune, 26703022);
+            var summonersResult = apiConnection.PerformRequest<Dictionary<string, Summoner>>(summonerRequest);
+            if (summonersResult.isSuccess)
+            {
+                var summoner = summonersResult.value[26703022.ToString()];
+                ViewBag.SummonerName = summoner.name;
+            }
+
+            // player name from playerID
+            // mastery level from playerID
+            // list of all champions with images
+                // champion from championID
 
             return View();
         }
