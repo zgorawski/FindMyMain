@@ -6,14 +6,16 @@ using RestSharp;
 
 namespace FindMyMain.Connection.Requests
 {
-    public class GameVersionRequest : IAPIRequest
+    public class RecentGamesRequest : IAPIRequest
     {
-        public GameVersionRequest(LolRegion region)
+        public RecentGamesRequest(LolRegion region, int summonerId)
         {
             this.region = Enum.GetName(typeof(LolRegion), region);
+            this.summonerId = summonerId;
         }
 
         private string region { get; set; }
+        private int summonerId { get; set; }
 
         // IAPIRequest
 
@@ -21,7 +23,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return "https://global.api.pvp.net";
+                return $"https://{region}.api.pvp.net";
             }
         }
 
@@ -29,7 +31,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return $"/api/lol/static-data/{region}/v1.2/versions";
+                return $"/api/lol/{region}/v1.3/game/by-summoner/{summonerId}/recent";
             }
         }
 
@@ -40,7 +42,6 @@ namespace FindMyMain.Connection.Requests
                 return Method.GET;
             }
         }
-
 
         public Dictionary<string, object> parameters
         {

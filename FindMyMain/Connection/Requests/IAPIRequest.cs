@@ -7,11 +7,11 @@ using RestSharp;
 
 namespace FindMyMain.Connection.Requests
 {
-    interface IAPIRequest
+    public interface IAPIRequest
     {
         string domain { get; }
         string endpoint { get; }
         Method httpMethod { get; }
-        Dictionary<string, string> parameters { get; }
+        Dictionary<string, object> parameters { get; }
     }
 }

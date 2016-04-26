@@ -1,4 +1,4 @@
-﻿enum LolRegion
+﻿public enum LolRegion
 {
     eune
 }
