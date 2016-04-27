@@ -8,9 +8,9 @@ namespace FindMyMain.Connection.Requests
 {
     public class GetSummonerRequest : IAPIRequest
     {
-        public GetSummonerRequest(LolRegion region, long summonerId)
+        public GetSummonerRequest(Region region, long summonerId)
         {
-            this.region = Enum.GetName(typeof(LolRegion), region);
+            this.region = RegionUtility.regionToString(region);
             this.summonerId = summonerId;
         }
 

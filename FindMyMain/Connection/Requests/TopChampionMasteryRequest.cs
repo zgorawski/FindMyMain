@@ -8,14 +8,18 @@ namespace FindMyMain.Connection.Requests
 {
     public class TopChampionMasteryRequest : IAPIRequest
     {
-        public TopChampionMasteryRequest(LolRegion region, long summonerId)
+        public TopChampionMasteryRequest(Region region, long summonerId, int limit = 1)
         {
-            this.region = Enum.GetName(typeof(LolRegion), region);
+            this.region = RegionUtility.regionToString(region);
+            platformId = RegionUtility.regionToPlatformId(region);
             this.summonerId = summonerId;
+            this.limit = limit;
         }
 
         private string region { get; set; }
+        private string platformId { get; set; }
         private long summonerId { get; set; }
+        private int limit { get; set; }
 
         // IAPIRequest
 
@@ -31,7 +35,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return $"/api/lol/{region}/v1.4/summoner/{summonerId}";
+                return $"/championmastery/location/{platformId}/player/{summonerId}/topchampions";
             }
         }
 
@@ -48,7 +52,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return null;
+                return new Dictionary<string, object> { { "count", limit } };
             }
         }
     }

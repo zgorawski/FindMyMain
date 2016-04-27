@@ -183,6 +183,7 @@
     <Compile Include="Model\ChampionsModel.cs" />
     <Compile Include="Model\Game.cs" />
     <Compile Include="Model\LolRegion.cs" />
+    <Compile Include="Model\Mastery.cs" />
     <Compile Include="Model\Summoner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

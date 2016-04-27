@@ -8,9 +8,9 @@ namespace FindMyMain.Connection.Requests
 {
     public class AllChampionsRequest : IAPIRequest
     {
-        public AllChampionsRequest(LolRegion region)
+        public AllChampionsRequest(Region region)
         {
-            this.region = Enum.GetName(typeof(LolRegion), region);
+            this.region = RegionUtility.regionToString(region);
         }
 
         private string region { get; set; }

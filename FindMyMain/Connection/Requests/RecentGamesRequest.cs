@@ -8,9 +8,9 @@ namespace FindMyMain.Connection.Requests
 {
     public class RecentGamesRequest : IAPIRequest
     {
-        public RecentGamesRequest(LolRegion region, long summonerId)
+        public RecentGamesRequest(Region region, long summonerId)
         {
-            this.region = Enum.GetName(typeof(LolRegion), region);
+            this.region = RegionUtility.regionToString(region);
             this.summonerId = summonerId;
         }
 
