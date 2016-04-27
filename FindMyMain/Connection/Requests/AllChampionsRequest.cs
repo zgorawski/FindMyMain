@@ -1,14 +1,14 @@
-﻿using System;
+﻿using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using RestSharp;
 
 namespace FindMyMain.Connection.Requests
 {
-    public class GameVersionRequest : IAPIRequest
+    public class AllChampionsRequest : IAPIRequest
     {
-        public GameVersionRequest(LolRegion region)
+        public AllChampionsRequest(LolRegion region)
         {
             this.region = Enum.GetName(typeof(LolRegion), region);
         }
@@ -29,7 +29,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return $"/api/lol/static-data/{region}/v1.2/versions";
+                return $"/api/lol/static-data/{region }/v1.2/champion";
             }
         }
 
@@ -46,7 +46,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return null;
+                return new Dictionary<string, object> { { "champData", "image" } };
             }
         }
     }

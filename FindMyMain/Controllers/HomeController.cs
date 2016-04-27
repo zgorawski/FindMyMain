@@ -17,16 +17,7 @@ namespace FindMyMain.Controllers
         public ActionResult Index()
         {
             var apiConnection = new RiotAPIConnection();
-
-            var gameVersionRequest = new GameVersionRequest(LolRegion.eune);
-            var gameVersionResult = apiConnection.PerformRequest<List<string>>(gameVersionRequest);
-            if (gameVersionResult.isSuccess)
-            {
-                ViewBag.GameVersion = gameVersionResult.value.FirstOrDefault();
-            }
-
-            // 26703022
-
+                        
             var recentGamesRequest = new RecentGamesRequest(LolRegion.eune, 26703022);
             var recentGamesResult = apiConnection.PerformRequest<Games>(recentGamesRequest);
             if (recentGamesResult.isSuccess)
@@ -43,10 +34,26 @@ namespace FindMyMain.Controllers
                 ViewBag.SummonerName = summoner.name;
             }
 
-            // player name from playerID
+            var allChampionsRequest = new AllChampionsRequest(LolRegion.eune);
+            var allChampionsResult = apiConnection.PerformRequest<Champions>(allChampionsRequest);
+            if (allChampionsResult.isSuccess)
+            {
+                var aatrox = allChampionsResult.value.data["Aatrox"];
+                ViewBag.ChampionData = aatrox.name;
+            }
+
+
+            // TODO:
+            // 26703022
+
             // mastery level from playerID
             // list of all champions with images
-                // champion from championID
+            // champion from championID
+
+            // helper for image url formating
+            // http://ddragon.leagueoflegends.com/cdn/6.8.1/img/champion/Aatrox.png
+
+            // strongly typed view model
 
             return View();
         }
