@@ -10,10 +10,10 @@ public enum RegionTag
 
 public enum PerkTag
 {
-    Animal, Shapeshifter, PetChampion, HealthCostAbilities, Global
+    Animal, Shapeshifter, PetChampion, HealthCostAbilities, Global, Yordle
 }
 
 public enum SkinTag
 {
-    Project, Hextech, Officer, Headhunter
+    Project, Hextech, Officer, Headhunter, Mecha, Championship, BloodMoon, WarringKingdoms, Christmas, School, Pirate
 }

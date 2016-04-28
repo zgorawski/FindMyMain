@@ -9,11 +9,20 @@ namespace FindMyMain.AnswersEngine
 {
     public class AnswersEngine
     {
-        public string Answer(ChampionDescription selected, ChampionDescription target)
+        public string Answer(KnownChampion selectedChampion, KnownChampion targetChampion)
         {
             // match
-            if (selected.Champion == target.Champion)
+            if (selectedChampion == targetChampion)
                 return "Bingo!";
+
+            var selectedChampionDescription = ChampionDescription.GetChampionDescription(selectedChampion);
+            var targetChampionDescription = ChampionDescription.GetChampionDescription(targetChampion);
+
+            if (!(selectedChampionDescription.HasValue && targetChampionDescription.HasValue))
+                return "unknown champion";
+
+            var selected = selectedChampionDescription.Value;
+            var target = targetChampionDescription.Value;
 
             // special quotes
             var specialQuote = selected.SpecialQuotes[target.Champion];
@@ -162,6 +171,8 @@ namespace FindMyMain.AnswersEngine
                         return "in fight we pay with own blood!";
                     case PerkTag.Global:
                         return "we can help our allies and punish enemies from vast distance";
+                    case PerkTag.Yordle:
+                        return "we are both a Yordle, to some degree at last";
                     default:
                         return null;
                 }
