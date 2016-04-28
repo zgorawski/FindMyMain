@@ -12,12 +12,12 @@ namespace FindMyMain.Model.Answers
 
         public RoleTag Role { get; private set; }
         public RegionTag Region { get; private set; }
-        public PerkTag[] Perks { get; private set; }
-        public SkinTag[] Skins { get; private set; }
+        public HashSet<PerkTag> Perks { get; private set; }
+        public HashSet<SkinTag> Skins { get; private set; }
         
         public Dictionary<KnownChampion, string> SpecialQuotes { get; private set; }
 
-        public ChampionDescription(KnownChampion champion, string welcomeQuote, RoleTag role, RegionTag region, PerkTag[] perks, SkinTag[] skins, Dictionary<KnownChampion, string> specialQuotes)
+        public ChampionDescription(KnownChampion champion, string welcomeQuote, RoleTag role, RegionTag region, HashSet<PerkTag> perks, HashSet<SkinTag> skins, Dictionary<KnownChampion, string> specialQuotes)
         {
             Champion = champion;
             WelcomeQuote = welcomeQuote;
