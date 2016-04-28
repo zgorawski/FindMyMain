@@ -180,6 +180,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model\Answers\ChampionDescription.cs" />
+    <Compile Include="Model\Answers\KnownChampion.cs" />
+    <Compile Include="Model\Answers\Tag.cs" />
     <Compile Include="Model\ChampionsModel.cs" />
     <Compile Include="Model\Game.cs" />
     <Compile Include="Model\LolRegion.cs" />
@@ -223,6 +226,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AnswersEngine\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
