@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 
-namespace FindMyMain.AnswersEngine
+namespace FindMyMain.AnswersEngineNamespace
 {
     public class AnswersEngine
     {
@@ -25,9 +25,8 @@ namespace FindMyMain.AnswersEngine
             var target = targetChampionDescription.Value;
 
             // special quotes
-            var specialQuote = selected.SpecialQuotes[target.Champion];
-            if (!string.IsNullOrEmpty(specialQuote))
-                return specialQuote;
+            if (selected.SpecialQuotes.ContainsKey(target.Champion))
+                return selected.SpecialQuotes[target.Champion];
 
             // similarities
 
@@ -47,7 +46,10 @@ namespace FindMyMain.AnswersEngine
 
             // prepare answer, based on number of similarities
             StringBuilder answerBuilder = new StringBuilder();
-            answerBuilder.Append(selected.WelcomeQuote);
+
+            // TODO: introduce better welcome quotes
+            // answerBuilder.Append(selected.WelcomeQuote);
+            // answerBuilder.Append(Environment.NewLine);
 
             switch (similaritesAnswers.Count)
             {
@@ -98,17 +100,17 @@ namespace FindMyMain.AnswersEngine
             switch (selected.Role)
             {
                 case RoleTag.Tank:
-                    return "Tank";
+                    return "We are firsts who enter the battle and last to leave";
                 case RoleTag.Fighter:
-                    return "Fighter";
+                    return "We are fighters, duh..";
                 case RoleTag.Slayer:
-                    return "Slayer";
+                    return "We spot weakness and eliminate it";
                 case RoleTag.Mage:
-                    return "Mage";
+                    return "We dont get dirty - let the magic do the work";
                 case RoleTag.Controller:
-                    return "Controller";
+                    return "Protecting allies, disturbing enemies - that's what we both do best";
                 case RoleTag.Marksmen:
-                    return "Marksmen";
+                    return "We both likes to throw, shoot and be on distance";
                 default:
                     return null;
             }
@@ -153,6 +155,8 @@ namespace FindMyMain.AnswersEngine
 
         private string SamePerkAnswer(ChampionDescription selected, ChampionDescription target)
         {
+            if (selected.Perks == null || target.Perks == null) return null;
+
             var commonPerks = selected.Perks.Intersect(target.Perks);
             if (commonPerks.Count() == 0) return null;
             else
@@ -181,6 +185,8 @@ namespace FindMyMain.AnswersEngine
 
         private string SameSkinAnswer(ChampionDescription selected, ChampionDescription target)
         {
+            if (selected.Skins == null || target.Skins == null) return null;
+
             var commonSkins = selected.Skins.Intersect(target.Skins);
             if (commonSkins.Count() == 0) return null;
             else

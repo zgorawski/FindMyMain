@@ -1,6 +1,7 @@
 ﻿using FindMyMain.Connection;
 using FindMyMain.Connection.Requests;
 using FindMyMain.Model;
+using FindMyMain.AnswersEngineNamespace;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -61,6 +62,10 @@ namespace FindMyMain.Controllers
             {
                 ViewBag.MasteryGrade = topMasteryResult.value.FirstOrDefault().highestGrade;
             }
+
+            var answersEngine = new AnswersEngine();
+            var answer = answersEngine.Answer(KnownChampion.Gragas, KnownChampion.Tryndamere);
+            ViewBag.Answer = answer;
 
             return View();
         }
