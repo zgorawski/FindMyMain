@@ -166,7 +166,7 @@ namespace FindMyMain.AnswersEngine
                     case PerkTag.Shapeshifter:
                         return "we can adopt - change ourselfs depending on circumstances";
                     case PerkTag.PetChampion:
-                        return "we often do not fight alone";
+                        return "we both have beings that aid us in a fight";
                     case PerkTag.HealthCostAbilities:
                         return "in fight we pay with own blood!";
                     case PerkTag.Global:

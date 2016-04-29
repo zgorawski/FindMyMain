@@ -124,7 +124,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -133,7 +133,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -142,7 +142,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -151,7 +151,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -160,7 +160,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -169,7 +169,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -178,7 +178,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -187,7 +187,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -196,7 +196,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -205,7 +205,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -214,7 +214,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -223,7 +223,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -232,7 +232,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -241,7 +241,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -250,7 +250,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -259,7 +259,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -268,7 +268,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        new HashSet<PerkTag> { PerkTag.Yordle, PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -277,7 +277,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -286,7 +286,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
@@ -295,7 +295,7 @@ namespace FindMyMain.Model.Answers
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
+                        new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
                     break;
