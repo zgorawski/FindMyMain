@@ -10,7 +10,7 @@ namespace FindMyMain.Connection.Requests
     {
         public GetSummonerRequest(Region region, long summonerId)
         {
-            this.region = RegionUtility.regionToString(region);
+            this.region = RegionUtility.RegionToString(region);
             this.summonerId = summonerId;
         }
 

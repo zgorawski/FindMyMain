@@ -1,21 +1,21 @@
-﻿using System;
+﻿using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using RestSharp;
 
 namespace FindMyMain.Connection.Requests
 {
-    public class RecentGamesRequest : IAPIRequest
+    public class GetSummonerByNameRequest: IAPIRequest
     {
-        public RecentGamesRequest(Region region, long summonerId)
+        public GetSummonerByNameRequest(Region region, string summonerName)
         {
             this.region = RegionUtility.RegionToString(region);
-            this.summonerId = summonerId;
+            this.summonerName = summonerName;
         }
 
         private string region { get; set; }
-        private long summonerId { get; set; }
+        private string summonerName { get; set; }
 
         // IAPIRequest
 
@@ -31,7 +31,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return $"/api/lol/{region}/v1.3/game/by-summoner/{summonerId}/recent";
+                return $"/api/lol/{region}/v1.4/summoner/by-name/{summonerName}";
             }
         }
 
@@ -42,6 +42,7 @@ namespace FindMyMain.Connection.Requests
                 return Method.GET;
             }
         }
+
 
         public Dictionary<string, object> parameters
         {

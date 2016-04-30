@@ -10,7 +10,7 @@ namespace FindMyMain.Connection.Requests
     {
         public AllChampionsRequest(Region region)
         {
-            this.region = RegionUtility.regionToString(region);
+            this.region = RegionUtility.RegionToString(region);
         }
 
         private string region { get; set; }

@@ -10,8 +10,8 @@ namespace FindMyMain.Connection.Requests
     {
         public TopChampionMasteryRequest(Region region, long summonerId, int limit = 1)
         {
-            this.region = RegionUtility.regionToString(region);
-            platformId = RegionUtility.regionToPlatformId(region);
+            this.region = RegionUtility.RegionToString(region);
+            platformId = RegionUtility.RegionToPlatformId(region);
             this.summonerId = summonerId;
             this.limit = limit;
         }

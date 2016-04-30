@@ -15,13 +15,20 @@ public class RegionUtility
         return Enum.GetValues(typeof(Region)).Cast<Region>();
     }
 
-    public static string regionToString(Region region)
+    public static IEnumerable<KeyValuePair<string, int>> AllRegionsWithNames()
+    {
+        var allRegions = AllRegions();
+
+        return allRegions.Select(item => new KeyValuePair<string, int>(RegionToString(item).ToUpper(), (int)item));
+    }
+
+    public static string RegionToString(Region region)
     {
         var stringifiedRegion = Enum.GetName(typeof(Region), region);
         return stringifiedRegion.ToLower();
     }
 
-    public static string regionToPlatformId(Region region)
+    public static string RegionToPlatformId(Region region)
     {
         switch (region)
         {

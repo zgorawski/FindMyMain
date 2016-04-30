@@ -1,13 +1,19 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@using FindMyMain.ViewModel
+@model HomePageViewModel
+
+
+@using (Html.BeginForm("Play", "Home", FormMethod.Post, new { @class = "xaxa" }))
+{
+
+        @Html.TextBoxFor(m => m.PlayerInput.SummonerName, new { @class = "xaxat", @placeholder = "summoner name" })
+
+        @Html.DropDownListFor(m => m.PlayerInput.Region, Model.AvailableRegions, new { @class = "form-control" })
+
+
+        <button type="submit" class="btn btn-primary">Play</button>
 }
 
-<h2>@ViewBag.ChampionData</h2>
-
-<h2>@ViewBag.FellowId</h2>
-
-<h2>@ViewBag.SummonerName</h2>
-
-<h2>@ViewBag.MasteryGrade</h2>
-
-<h2>@ViewBag.Answer</h2>
+@if (!string.IsNullOrEmpty(Model.Error))
+{
+    <h2>Error: @Model.Error</h2>
+}
