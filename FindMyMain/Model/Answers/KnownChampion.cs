@@ -1,4 +1,6 @@
-﻿public enum KnownChampion
+﻿using System;
+
+public enum KnownChampion
 {
     Aatrox = 266,
     Thresh = 412,
@@ -130,4 +132,66 @@
     Nami = 267,
     JarvanIV = 59,
     Ezreal = 81
+}
+
+public class KnownChampionUtility
+{
+    public static string ChampionIdToName(int championId)
+    {
+        if (!Enum.IsDefined(typeof(KnownChampion), championId)) { return string.Empty;  }
+
+        var champion = (KnownChampion)championId;
+        string result = string.Empty;
+
+        switch (champion)
+        {
+            case KnownChampion.AurelionSol:
+                result = "Aurelion Sol";
+                break;
+            case KnownChampion.KogMaw:
+                result = "Kog'Maw";
+                break;
+            case KnownChampion.Khazix:
+                result = "Kha'Zix";
+                break;
+            case KnownChampion.LeeSin:
+                result = "Lee Sin";
+                break;
+            case KnownChampion.TwistedFate:
+                result = "Twisted Fate";
+                break;
+            case KnownChampion.DrMundo:
+                result = "Dr Mundo";
+                break;
+            case KnownChampion.TahmKench:
+                result = "Tahm Kench";
+                break;
+            case KnownChampion.RekSai:
+                result = "Rek'Sai";
+                break;
+            case KnownChampion.MissFortune:
+                result = "Miss Fortune";
+                break;
+            case KnownChampion.MonkeyKing:
+                result = "Wukong";
+                break;
+            case KnownChampion.XinZhao:
+                result = "Xin Zhao";
+                break;
+            case KnownChampion.MasterYi:
+                result = "Master Yi";
+                break;
+            case KnownChampion.Velkoz:
+                result = "Vel'Koz";
+                break;
+            case KnownChampion.JarvanIV:
+                result = "Jarvan IV";
+                break;
+            default:
+                result = Enum.GetName(typeof(KnownChampion), champion);
+                break;
+        }
+        
+        return result;
+    }
 }

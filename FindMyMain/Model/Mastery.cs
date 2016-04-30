@@ -7,7 +7,7 @@ namespace FindMyMain.Model
 {
     public class Mastery
     {
-        public long championId { get; set; }
+        public int championId { get; set; }
         public int championLevel { get; set; }
         public string highestGrade { get; set; }
     }

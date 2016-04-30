@@ -91,13 +91,13 @@ namespace FindMyMain.Controllers
             var summonerName = viewModel.PlayerInput.SummonerName;
 
             var apiConnection = new RiotAPIConnection();
-            var summonerRequest = new GetSummonerByNameRequest(region, summonerName);
 
+            var summonerRequest = new GetSummonerByNameRequest(region, summonerName);
             var summonersResult = apiConnection.PerformRequest<Dictionary<string, Summoner>>(summonerRequest);
             if (summonersResult.isSuccess && summonersResult.value != null && summonersResult.value.ContainsKey(summonerName) )
             {
                 var summoner = summonersResult.value[summonerName];
-                return RedirectToAction("Play", "Game", new { summoner = summoner });
+                return RedirectToAction("Play", "Game", new { region = region, summonerId = summoner.id });
             }
             else
             {

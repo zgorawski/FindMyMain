@@ -8,16 +8,6 @@ namespace FindMyMain.Model
     public class Games
     {
         public List<Game> games { get; set; }
-
-        public FellowPlayer RandomFellowPlayer()
-        {
-            var random = new Random();
-
-            var randomGame = games[random.Next(games.Count)];
-            var randomFellow = randomGame.fellowPlayers[random.Next(randomGame.fellowPlayers.Count)];
-
-            return randomFellow;
-        }
     }
 
     public class Game
@@ -32,5 +22,36 @@ namespace FindMyMain.Model
         public int championId { get; set; }
         public long summonerId { get; set; }
         public int teamId { get; set; }
+    }
+
+    public  class GameSeed
+    {
+        public int PlayerChampionId { get; set; }
+        public long FellowPlayerId { get; set; }
+        public int FellowPlayedChampionId { get; set; }
+        public bool SameTeam { get; set; }
+        public int NGamesAgo { get; set; }
+
+        public long TargetChampionId { get; set; }
+
+        public static GameSeed GenerateGameSeed(List<Game> games)
+        {
+            if (games == null || games.Count == 0) { return null; }
+
+            var random = new Random();
+
+            var randomGameNumber = random.Next(games.Count);
+            var randomGame = games[randomGameNumber];
+            var randomFellow = randomGame.fellowPlayers[random.Next(randomGame.fellowPlayers.Count)];
+
+            return new GameSeed()
+            {
+                PlayerChampionId = randomGame.championId,
+                NGamesAgo = randomGameNumber + 1,
+                SameTeam = randomGame.teamId == randomFellow.teamId,
+                FellowPlayerId = randomFellow.summonerId,
+                FellowPlayedChampionId = randomFellow.championId
+            };
+        }
     }
 }
