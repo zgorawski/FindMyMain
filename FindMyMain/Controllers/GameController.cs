@@ -48,7 +48,11 @@ namespace FindMyMain.Controllers
             var allChampionsRequest = new AllChampionsRequest(region.Value);
             var allChampionsResult = apiConnection.PerformRequest<Champions>(allChampionsRequest);
             if (!allChampionsResult.isSuccess) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
-            
+
+            var gameVersionsRequest = new GameVersionsRequest(region.Value);
+            var gameVersionsResult = apiConnection.PerformRequest<List<string>>(gameVersionsRequest);
+            if (!gameVersionsResult.isSuccess || gameVersionsResult.value.Count == 0) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
+
             return View(new GameViewModel()
             {
                 Champions = allChampionsResult.value.data.Values,
@@ -57,7 +61,14 @@ namespace FindMyMain.Controllers
                 FellowPlayerName = fellowName,
                 SameTeam = gameSeed.SameTeam,
                 NGamesAgo = gameSeed.NGamesAgo,
+                GameVersion = gameVersionsResult.value.First()
             });
+        }
+
+
+        public string SelectedChampion(int? championId)
+        {
+            return $"OMG {championId}";
         }
     }
 }

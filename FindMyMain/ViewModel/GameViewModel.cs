@@ -14,5 +14,6 @@ namespace FindMyMain.ViewModel
         public bool SameTeam { get; set; }
         public int NGamesAgo { get; set; }
         public IEnumerable<Champion> Champions { get; set; }
+        public string GameVersion { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿@model FindMyMain.ViewModel.GameViewModel
+﻿@using FindMyMain.Extensions
+@model FindMyMain.ViewModel.GameViewModel
 
 @{
     ViewBag.Title = "Play";
@@ -23,3 +24,12 @@
         <span>@Model.NGamesAgo games ago</span>
     }
 </p>
+
+@foreach (var champion in Model.Champions)
+{
+    string championImageUrl = "http://ddragon.leagueoflegends.com/cdn/" + Model.GameVersion + "/img/champion/" + champion.image.full;
+
+    @Ajax.ImageActionLink(championImageUrl, champion.name, "SelectedChampion", new { championId = champion.id }, new AjaxOptions() { UpdateTargetId = "responseXaxa" } );
+}
+
+<h2 id="responseXaxa"></h2>

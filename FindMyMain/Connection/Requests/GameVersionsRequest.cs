@@ -6,9 +6,9 @@ using System.Web;
 
 namespace FindMyMain.Connection.Requests
 {
-    public class AllChampionsRequest : IAPIRequest
+    public class GameVersionsRequest : IAPIRequest
     {
-        public AllChampionsRequest(Region region)
+        public GameVersionsRequest(Region region)
         {
             this.region = RegionUtility.RegionToString(region);
         }
@@ -29,7 +29,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return $"/api/lol/static-data/{region}/v1.2/champion";
+                return $"/api/lol/static-data/{region }/v1.2/versions";
             }
         }
 
@@ -46,7 +46,7 @@ namespace FindMyMain.Connection.Requests
         {
             get
             {
-                return new Dictionary<string, object> { { "champData", "image" } };
+                return null;
             }
         }
     }
