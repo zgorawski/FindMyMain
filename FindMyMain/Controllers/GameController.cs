@@ -14,6 +14,8 @@ namespace FindMyMain.Controllers
 {
     public class GameController : Controller
     {
+        const string TargetChampionId = "targetChampionId";
+
         // GET: Play
         public ActionResult Play(Region? region = null, long? summonerId = null)
         {
@@ -36,6 +38,7 @@ namespace FindMyMain.Controllers
 
             var targetChampionId = topMasteryResult.value.FirstOrDefault().championId; 
             gameSeed.TargetChampionId = targetChampionId;
+            Session[TargetChampionId] = targetChampionId;
 
             // get name of player from seed
             var summonerRequest = new GetSummonerRequest(region.Value, gameSeed.FellowPlayerId);
@@ -44,8 +47,6 @@ namespace FindMyMain.Controllers
 
             var fellowName = summonersResult.value[gameSeed.FellowPlayerId.ToString()].name;
             
-            // TODO: store gameSeed !!!
-
             // prepare view model
             var allChampionsRequest = new AllChampionsRequest(region.Value);
             var allChampionsResult = apiConnection.PerformRequest<Champions>(allChampionsRequest);
@@ -71,14 +72,16 @@ namespace FindMyMain.Controllers
         public ActionResult SelectedChampion(int? championId)
         {
             var selectedChampion = KnownChampionUtility.TryCast(championId);
+            var targetChampion = KnownChampionUtility.TryCast((int?)Session[TargetChampionId]);
 
-            if (selectedChampion == null) { return Json(new AnswerViewModel() { Error = "Unknown champion" }); }
-
-            
+            if (selectedChampion == null || targetChampion == null) { return Json(new AnswerViewModel() { Error = "Unknown champion" }); }
+                        
             var answersEngine = new AnswersEngine();
-            var answer = answersEngine.Answer(selectedChampion.Value, KnownChampion.Tryndamere);
+            var answer = answersEngine.Answer(selectedChampion.Value, targetChampion.Value);
 
-            return Json(new AnswerViewModel() { IsMain = false, Answer = "omg!!" });
+            var json = Json(new AnswerViewModel() { IsMain = false, Answer = answer }, JsonRequestBehavior.AllowGet);
+
+            return json;
         }
     }
 }

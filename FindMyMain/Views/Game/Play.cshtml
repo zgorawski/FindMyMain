@@ -29,5 +29,5 @@
 {
     string championImageUrl = "http://ddragon.leagueoflegends.com/cdn/" + Model.GameVersion + "/img/champion/" + champion.image.full;
 
-    @Ajax.ImageActionLink(championImageUrl, champion.name, "SelectedChampion", new { championId = champion.id }, new AjaxOptions() { OnSuccess= "processAnswer" } );
+    @Ajax.ImageActionLink(championImageUrl, champion.name, "SelectedChampion", new { championId = champion.id }, new AjaxOptions() { OnSuccess = "processAnswer" } );
 }

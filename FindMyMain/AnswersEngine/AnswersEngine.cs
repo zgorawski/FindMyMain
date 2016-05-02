@@ -25,7 +25,7 @@ namespace FindMyMain.AnswersEngineNamespace
             var target = targetChampionDescription.Value;
 
             // special quotes
-            if (selected.SpecialQuotes.ContainsKey(target.Champion))
+            if (selected.SpecialQuotes != null && selected.SpecialQuotes.ContainsKey(target.Champion))
                 return selected.SpecialQuotes[target.Champion];
 
             // similarities
