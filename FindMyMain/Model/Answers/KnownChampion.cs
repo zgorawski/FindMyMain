@@ -136,6 +136,13 @@ public enum KnownChampion
 
 public class KnownChampionUtility
 {
+    public static KnownChampion? TryCast(int? championId)
+    {
+        if (!Enum.IsDefined(typeof(KnownChampion), championId)) { return null; }
+
+        return (KnownChampion)championId.Value;
+    }
+
     public static string ChampionIdToName(int championId)
     {
         if (!Enum.IsDefined(typeof(KnownChampion), championId)) { return string.Empty;  }

@@ -1,4 +1,5 @@
-﻿using FindMyMain.Connection;
+﻿using FindMyMain.AnswersEngineNamespace;
+using FindMyMain.Connection;
 using FindMyMain.Connection.Requests;
 using FindMyMain.Model;
 using FindMyMain.ViewModel;
@@ -6,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
 
 namespace FindMyMain.Controllers
@@ -66,9 +68,17 @@ namespace FindMyMain.Controllers
         }
 
 
-        public string SelectedChampion(int? championId)
+        public ActionResult SelectedChampion(int? championId)
         {
-            return $"OMG {championId}";
+            var selectedChampion = KnownChampionUtility.TryCast(championId);
+
+            if (selectedChampion == null) { return Json(new AnswerViewModel() { Error = "Unknown champion" }); }
+
+            
+            var answersEngine = new AnswersEngine();
+            var answer = answersEngine.Answer(selectedChampion.Value, KnownChampion.Tryndamere);
+
+            return Json(new AnswerViewModel() { IsMain = false, Answer = "omg!!" });
         }
     }
 }
