@@ -25,9 +25,13 @@
     }
 </p>
 
-@foreach (var champion in Model.Champions)
-{
-    string championImageUrl = "http://ddragon.leagueoflegends.com/cdn/" + Model.GameVersion + "/img/champion/" + champion.image.full;
+<p><input type="text" id="filter" placeholder="Search" /></p>
 
-    @Ajax.ImageActionLink(championImageUrl, champion.name, "SelectedChampion", new { championId = champion.id }, new AjaxOptions() { OnSuccess = "processAnswer" } );
-}
+<div id="grid">
+    @foreach (var champion in Model.Champions)
+    {
+        string championImageUrl = "http://ddragon.leagueoflegends.com/cdn/" + Model.GameVersion + "/img/champion/" + champion.image.full;
+
+        @Ajax.ImageActionLink(championImageUrl, champion.name, "SelectedChampion", new { championId = champion.id }, new AjaxOptions() { OnSuccess = "processAnswer" });
+    }
+</div>
