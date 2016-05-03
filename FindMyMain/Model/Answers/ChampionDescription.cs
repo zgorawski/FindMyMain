@@ -122,7 +122,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Annie:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -131,7 +131,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Jhin:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -140,7 +140,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Nautilus:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -149,7 +149,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Karma:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -158,7 +158,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Lux:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -167,7 +167,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Ahri:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -185,7 +185,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Viktor:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -194,7 +194,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Singed:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -212,7 +212,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Anivia:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -221,7 +221,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Maokai:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -230,7 +230,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Lissandra:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -239,7 +239,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Morgana:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -248,7 +248,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Evelynn:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -257,7 +257,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Fizz:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -266,7 +266,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Heimerdinger:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle, PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -275,7 +275,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Zed:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -302,7 +302,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Sona:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Controller,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -311,7 +311,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Katarina:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -320,7 +320,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.KogMaw:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -329,7 +329,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Ashe:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -338,7 +338,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Lulu:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Controller,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion, PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -347,7 +347,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Karthus:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -356,7 +356,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Alistar:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -374,7 +374,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Vayne:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -392,7 +392,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Varus:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -410,7 +410,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Leona:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -419,7 +419,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Syndra:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -428,7 +428,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Pantheon:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -437,7 +437,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Khazix:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -455,7 +455,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Corki:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -464,7 +464,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Caitlyn:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -473,7 +473,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Azir:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion, PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -482,7 +482,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Nidalee:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Shapeshifter, PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -491,7 +491,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Kennen:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -500,7 +500,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Galio:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -509,7 +509,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Veigar:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -518,7 +518,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Bard:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Controller,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -536,7 +536,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Malzahar:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -545,7 +545,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Graves:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -599,7 +599,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Elise:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion, PerkTag.Shapeshifter, PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -608,7 +608,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Volibear:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -617,7 +617,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Nunu:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Controller,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -626,7 +626,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.TwistedFate:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -653,7 +653,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Kalista:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -662,7 +662,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.DrMundo:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -671,7 +671,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.TahmKench:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -680,7 +680,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Diana:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -689,7 +689,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Brand:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -698,7 +698,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Sejuani:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -707,7 +707,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Vladimir:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -716,7 +716,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Zac:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -734,7 +734,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Quinn:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -743,7 +743,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Akali:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -752,7 +752,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Tristana:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -770,7 +770,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Sivir:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -779,7 +779,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Lucian:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -788,7 +788,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Rengar:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -815,7 +815,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Malphite:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -824,7 +824,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Yasuo:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -833,7 +833,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Xerath:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -842,7 +842,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Teemo:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -869,7 +869,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Draven:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -878,7 +878,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Shaco:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -887,7 +887,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Swain:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -896,7 +896,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Janna:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Controller,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -905,7 +905,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Talon:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -914,7 +914,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Ziggs:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -923,7 +923,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Ekko:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -932,7 +932,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Orianna:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -941,7 +941,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.FiddleSticks:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -959,7 +959,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Chogath:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -968,7 +968,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Rammus:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -977,7 +977,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Leblanc:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -986,7 +986,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Soraka:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Controller,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities, PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -995,7 +995,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Zilean:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1004,7 +1004,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Nocturne:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1013,7 +1013,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Jinx:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1031,7 +1031,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Urgot:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1040,7 +1040,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Kindred:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1049,7 +1049,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.MissFortune:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1067,7 +1067,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Blitzcrank:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Controller,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1076,7 +1076,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Shen:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1085,7 +1085,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Braum:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1103,7 +1103,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Twitch:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1112,7 +1112,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.MasterYi:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1121,7 +1121,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Taric:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Controller,
                         RegionTag.MountTargon,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1130,7 +1130,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Amumu:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1157,7 +1157,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Kassadin:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1166,7 +1166,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Velkoz:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1175,7 +1175,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Zyra:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1184,7 +1184,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Nami:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Controller,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
@@ -1202,7 +1202,7 @@ namespace FindMyMain.Model.Answers
                 case KnownChampion.Ezreal:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
-                        RoleTag.Fighter,
+                        RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },

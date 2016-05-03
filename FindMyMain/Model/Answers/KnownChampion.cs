@@ -138,7 +138,7 @@ public class KnownChampionUtility
 {
     public static KnownChampion? TryCast(int? championId)
     {
-        if (!Enum.IsDefined(typeof(KnownChampion), championId)) { return null; }
+        if (!championId.HasValue || !Enum.IsDefined(typeof(KnownChampion), championId)) { return null; }
 
         return (KnownChampion)championId.Value;
     }
