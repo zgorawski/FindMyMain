@@ -1104,19 +1104,19 @@ namespace FindMyMain.Model.Answers
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
                         RoleTag.Marksmen,
-                        RegionTag.Other,
+                        RegionTag.Zaun,
                         new HashSet<PerkTag> { PerkTag.Animal },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Vandal },
+                        null);
                     break;
                 case KnownChampion.MasterYi:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
                         RoleTag.Slayer,
-                        RegionTag.Other,
+                        RegionTag.Ionia,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Headhunter, SkinTag.Project },
+                        new Dictionary<KnownChampion, string> { { KnownChampion.MonkeyKing, "You are looking for my puppil" } });
                     break;
                 case KnownChampion.Taric:
                     result = new ChampionDescription(champion,
@@ -1124,35 +1124,35 @@ namespace FindMyMain.Model.Answers
                         RoleTag.Controller,
                         RegionTag.MountTargon,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Ezreal, "What do you want from my boy?!" } });
                     break;
                 case KnownChampion.Amumu:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
                         RoleTag.Tank,
-                        RegionTag.Other,
+                        RegionTag.Shurima,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Annie, "You are looking for my good friend" } });
                     break;
                 case KnownChampion.Gangplank:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
-                        RegionTag.Other,
+                        RegionTag.Bilgewater,
                         new HashSet<PerkTag> { PerkTag.Global },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        new Dictionary<KnownChampion, string> { { KnownChampion.MissFortune, "You are looking for the one that almost killed me" } });
                     break;
                 case KnownChampion.Trundle:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
-                        RegionTag.Other,
+                        RegionTag.Freljord,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Officer },
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Lissandra, "You are looking for my allay" } });
                     break;
                 case KnownChampion.Kassadin:
                     result = new ChampionDescription(champion,
@@ -1161,16 +1161,23 @@ namespace FindMyMain.Model.Answers
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new Dictionary<KnownChampion, string> {
+                            { KnownChampion.Chogath, "I am trying to protect world from this creature..." },
+                            { KnownChampion.KogMaw, "I am trying to protect world from this creature..." },
+                            { KnownChampion.Khazix, "I am trying to protect world from this creature..." },
+                            { KnownChampion.Velkoz, "I am trying to protect world from this creature..." },
+                            { KnownChampion.RekSai, "I am trying to protect world from this creature..." },
+                            { KnownChampion.Chogath, "I am trying to protect world from him" }
+                        });
                     break;
                 case KnownChampion.Velkoz:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
                         RoleTag.Mage,
-                        RegionTag.Other,
+                        RegionTag.Void,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Battlecast },
+                        null);
                     break;
                 case KnownChampion.Zyra:
                     result = new ChampionDescription(champion,
@@ -1178,8 +1185,8 @@ namespace FindMyMain.Model.Answers
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        null);
                     break;
                 case KnownChampion.Nami:
                     result = new ChampionDescription(champion,
@@ -1187,26 +1194,26 @@ namespace FindMyMain.Model.Answers
                         RoleTag.Controller,
                         RegionTag.Other,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        null);
                     break;
                 case KnownChampion.JarvanIV:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
                         RoleTag.Fighter,
-                        RegionTag.Other,
+                        RegionTag.Damacia,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Commando, SkinTag.Dragonslayer, SkinTag.WarringKingdoms },
+                        null);
                     break;
                 case KnownChampion.Ezreal:
                     result = new ChampionDescription(champion,
                         "True warriors are born in blood!",
                         RoleTag.Marksmen,
-                        RegionTag.Other,
+                        RegionTag.Piltover,
                         new HashSet<PerkTag> { PerkTag.Global },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Debonair, SkinTag.Cards },
+                        null);
                     break;
                 default:
                     break;

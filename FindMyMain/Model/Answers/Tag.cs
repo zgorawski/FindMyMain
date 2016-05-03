@@ -15,5 +15,5 @@ public enum PerkTag
 
 public enum SkinTag
 {
-    Project, Hextech, Officer, Headhunter, Mecha, Championship, BloodMoon, WarringKingdoms, Christmas, School, Pirate
+    Vandal, Battlecast, Commando, Dragonslayer, Project, Hextech, Officer, Headhunter, Mecha, Championship, BloodMoon, WarringKingdoms, Christmas, School, Pirate, Debonair, Cards
 }
