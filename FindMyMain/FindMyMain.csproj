@@ -202,6 +202,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\bg.png" />
+    <Content Include="Content\Images\bg2.png" />
+    <Content Include="Content\Images\logo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -212,6 +215,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Custom\FindMyMain.js" />
     <Content Include="Scripts\Custom\isotope.pkgd.min.js" />
+    <Content Include="Scripts\Custom\jquery.balloon.min.js" />
     <Content Include="Scripts\Custom\shuffle.js" />
     <Content Include="Scripts\Custom\shuffle.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

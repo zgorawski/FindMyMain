@@ -1,19 +1,49 @@
 ﻿@using FindMyMain.ViewModel
 @model HomePageViewModel
 
+<div class="jumbotron vertical-center fullBackground">
 
-@using (Html.BeginForm("Play", "Home", FormMethod.Post, new { @class = "xaxa" }))
-{
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="maxWH100" src="~/Content/Images/logo.png" />
+            </div>
+        </div>
+        <div class="row margin-top-15">
+            <div class="col-md-12">
+                @using (Html.BeginForm("Play", "Home", FormMethod.Post, new { @class = "form-horizontal" }))
+                {
+                    <div class="container">
+                        <div class="row">
+                            @*<div class="form-group">*@
+                                <div class="col-md-6 padding-0">
+                                    @Html.TextBoxFor(m => m.PlayerInput.SummonerName, new { @class = "fmm-w100h40", @placeholder = "summoner name" })
+                                </div>
+                            @*</div>
+                            <div class="form-group">*@
+                                <div class="col-md-3">
+                                    @Html.DropDownListFor(m => m.PlayerInput.Region, Model.AvailableRegions, new { @class = "fmm-w100h40" })
+                                </div>
+                            @*</div>
+                            <div class="form-group">*@
+                                <div class="col-md-3 padding-0">
+                                    <button type="submit" class="fmm-w100h40 fmm-playButton">Play</button>
+                                </div>
+                            @*</div>*@
+                        </div>
+                    </div>
+                }
 
-        @Html.TextBoxFor(m => m.PlayerInput.SummonerName, new { @class = "xaxat", @placeholder = "summoner name" })
+                    </div>
 
-        @Html.DropDownListFor(m => m.PlayerInput.Region, Model.AvailableRegions, new { @class = "form-control" })
+        @if (!string.IsNullOrEmpty(Model.Error))
+        {
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Error: @Model.Error</h2>
+                </div>
+            </div>
+        }
 
-
-        <button type="submit" class="btn btn-primary">Play</button>
-}
-
-@if (!string.IsNullOrEmpty(Model.Error))
-{
-    <h2>Error: @Model.Error</h2>
-}
+    </div>
+</div>

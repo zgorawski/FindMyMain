@@ -8,6 +8,10 @@ namespace FindMyMain
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+            
+
+            bundles.Add(new ScriptBundle("~/bundles/jquery.balloon.min").Include("~/Scripts/Custom/jquery.balloon.min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/findmymain").Include("~/Scripts/Custom/FindMyMain.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/isotope").Include("~/Scripts/Custom/isotope.pkgd.min.js"));
@@ -30,7 +34,7 @@ namespace FindMyMain
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
         }
     }
 }

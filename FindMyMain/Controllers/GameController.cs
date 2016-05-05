@@ -79,7 +79,7 @@ namespace FindMyMain.Controllers
             var answersEngine = new AnswersEngine();
             var answer = answersEngine.Answer(selectedChampion.Value, targetChampion.Value);
 
-            var json = Json(new AnswerViewModel() { IsMain = false, Answer = answer }, JsonRequestBehavior.AllowGet);
+            var json = Json(new AnswerViewModel() { IsMain = false, Answer = answer, ChampionId = championId.Value }, JsonRequestBehavior.AllowGet);
 
             return json;
         }

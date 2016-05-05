@@ -8,10 +8,10 @@ namespace FindMyMain.Extensions
 {    
     public static class ImageActionLinkExtension
     {
-        public static IHtmlString ImageActionLink(this AjaxHelper helper, string imageUrl, string championName, string actionName, object routeValues, AjaxOptions ajaxOptions, object htmlAttributes = null)
+        public static IHtmlString ImageActionLink(this AjaxHelper helper, string imageUrl, string championName, int championId, string actionName, object routeValues, AjaxOptions ajaxOptions, object htmlAttributes = null)
         {
             var sb = new StringBuilder();
-            sb.AppendLine("<figure class='championItem'>");
+            sb.AppendLine("<figure class='championItem' id='champion" + championId.ToString() + "'>");
             sb.AppendLine("<img src='" + imageUrl + "' alt='" + championName + "' />");
             sb.AppendLine("<figcaption>" + championName + "</figcaption>");
             sb.AppendLine("</figure>");
