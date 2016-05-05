@@ -4,48 +4,56 @@
 @{
     ViewBag.Title = "Play";
 }
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-4" id="fmm-chat">
-
-            <h2>Play</h2>
-
-            <p>
-                Try to guess who is the main chapion of: @Model.FellowPlayerName. She/he played
-                @if (@Model.SameTeam)
+<div class="jumbotron fullBackground2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="fmm-chat">
+                <ul class="container">
+                    <li class="row">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <img src="http://ddragon.leagueoflegends.com/cdn/6.8.1/img/champion/Aatrox.png" class="img-circle media-left media-middle fmm-img50" />
+                            </div>
+                            <div class="media-body">
+                                <p class="fmm-chatMessage">
+                                    Try to guess who is the main chapion of: @Model.FellowPlayerName. She/he played
+                                    @if (@Model.SameTeam)
             {
-                    <span>with</span>
-                }
-                else
-                {
-                    <span>against</span>
-                } you as @Model.FellowPlayedChampionName (you've played @Model.PlayerChampionName)
-                @if (Model.NGamesAgo == 1)
+                                        <span>with</span>
+                                    }
+                                    else
+                                    {
+                                        <span>against</span>
+                                    } you as @Model.FellowPlayedChampionName (you've played @Model.PlayerChampionName)
+                                    @if (Model.NGamesAgo == 1)
             {
-                    <span>in last game</span>
-                }
-                else
-                {
-                    <span>@Model.NGamesAgo games ago</span>
-                }
-            </p>
+                                        <span>in last game</span>
+                                    }
+                                    else
+                                    {
+                                        <span>@Model.NGamesAgo games ago</span>
+                                    }
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
 
-        </div>
-        <div class="col-md-8">
 
+                <p><input type="text" id="fmm-filter" placeholder="Search" /></p>
 
-            <p><input type="text" id="fmm-filter" placeholder="Search" /></p>
-
-            <div id="fmm-grid">
-                @foreach (var champion in Model.Champions)
+                <div id="fmm-grid">
+                    @foreach (var champion in Model.Champions)
             {
                 string championImageUrl = "http://ddragon.leagueoflegends.com/cdn/" + Model.GameVersion + "/img/champion/" + champion.image.full;
 
-                    @Ajax.ImageActionLink(championImageUrl, champion.name, champion.id, "SelectedChampion", new { championId = champion.id }, new AjaxOptions() { OnSuccess = "processAnswer" });
+                        @Ajax.ImageActionLink(championImageUrl, champion.name, champion.id, "SelectedChampion", new { championId = champion.id }, new AjaxOptions() { OnSuccess = "processAnswer" });
             }
-            </div>
+                </div>
 
+            </div>
         </div>
     </div>
 </div>
