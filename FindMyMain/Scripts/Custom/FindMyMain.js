@@ -1,34 +1,21 @@
 ﻿function processAnswer(answerData) {
+    
+    alert(answerData.Answer);
 
-    var championId = '#champion' + answerData.ChampionId
+    var chatMessage = 
+        '<li class="row">' +
+            '<div class="media">' +
+                '<div class="media-left media-middle">' +
+                    '<img src="http://ddragon.leagueoflegends.com/cdn/6.8.1/img/champion/Aatrox.png" class="img-circle media-left media-middle fmm-img50" />' +
+                '</div>' +
+                '<div class="media-body">' +
+                    '<p class="fmm-chatMessage">' + answerData.Answer + '</p>' +
+                '</div>' +
+            '</div>' +
+        '</li>';
 
-    // $(championId).fadeOut()
-
-    $(championId).showBaloon();
-
-    // alert(answerData.Answer)
+    $('#fmm-chat').append(chatMessage);
 }
-
-// baloon
-
-$(function () {
-
-    $("#grid > figure").showBalloon({
-        position: "left",
-        offsetX: 50,
-        offsetY: 50,
-        tipSize: 20,
-        css: {
-            maxWidth: "17em",
-            border: "solid 5px #463974",
-            color: "#463974",
-            fontWeight: "bold",
-            fontSize: "130%",
-            backgroundColor: "#efefef"
-        }
-    });
-});
-
 
 // quick search regex
 var qsRegex;
