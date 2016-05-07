@@ -5,7 +5,7 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-md-12">
-                <img class="maxWH100" src="~/Content/Images/logo.png" />
+                <img class="img-responsive fmm-width100percent" src="~/Content/Images/logo.png" />
             </div>
         </div>
         <div class="row margin-top-15">
@@ -17,7 +17,7 @@
                             <div class="col-md-6 padding-0">
                                 @Html.TextBoxFor(m => m.PlayerInput.SummonerName, new { @class = "fmm-w100h40", @placeholder = "summoner name" })
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 padding-media">
                                 @Html.DropDownListFor(m => m.PlayerInput.Region, Model.AvailableRegions, new { @class = "fmm-w100h40" })
                             </div>
                             <div class="col-md-3 padding-0">

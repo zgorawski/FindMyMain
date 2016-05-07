@@ -79,7 +79,7 @@
 }
 
 button.fmm-playButton {
-    margin-top: 3px;
+    /*margin-top: 3px;*/
     box-shadow: none;
     background-image: none;
     background-color: #C60505;
@@ -93,6 +93,10 @@ button.fmm-playButton {
 
 .margin-top-15 {
     margin-top: 15px;
+}
+
+.fmm-width100percent {
+    width: 100%;
 }
 
 .maxWH100 {
@@ -124,4 +128,13 @@ figure.championItem figcaption {
     font-size: 16px;
     color: white;
     background-color: darkblue;
+}
+
+@media (max-width: 992px) {
+  .padding-media {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
 }
