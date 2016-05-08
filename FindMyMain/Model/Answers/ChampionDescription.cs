@@ -36,7 +36,7 @@ namespace FindMyMain.Model.Answers
             {
                 case KnownChampion.Aatrox:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
@@ -45,7 +45,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Thresh:
                     result = new ChampionDescription(champion,
-                        "Oh, the eternity we shall spend together.",
+                        "",
                         RoleTag.Controller,
                         RegionTag.ShadowIsles,
                         null,
@@ -56,7 +56,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Tryndamere:
                     result = new ChampionDescription(champion,
-                        "Into battle",
+                        "",
                         RoleTag.Fighter,
                         RegionTag.Freljord,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
@@ -65,7 +65,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Gragas:
                     result = new ChampionDescription(champion,
-                        "Time to roll out the barrel!",
+                        "",
                         RoleTag.Fighter,
                         RegionTag.Freljord,
                         null,
@@ -74,7 +74,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.AurelionSol:
                     result = new ChampionDescription(champion,
-                        "The stars look very different today.",
+                        "",
                         RoleTag.Mage,
                         RegionTag.MountTargon,
                         null,
@@ -83,7 +83,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Cassiopeia:
                     result = new ChampionDescription(champion,
-                        "Come, look me in the eyes.",
+                        "",
                         RoleTag.Mage,
                         RegionTag.Noxus,
                         new HashSet<PerkTag> { PerkTag.Animal },
@@ -94,7 +94,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Poppy:
                     result = new ChampionDescription(champion,
-                        "I'm no hero - just a Yordle with a hammer.",
+                        "",
                         RoleTag.Fighter,
                         RegionTag.Damacia,
                         new HashSet<PerkTag> { PerkTag.Yordle },
@@ -103,7 +103,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Ryze:
                     result = new ChampionDescription(champion,
-                        "I will show you arcane magic!",
+                        "",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
@@ -112,7 +112,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Sion:
                     result = new ChampionDescription(champion,
-                        "More enemies!",
+                        "",
                         RoleTag.Tank,
                         RegionTag.Noxus,
                         null,
@@ -121,997 +121,1002 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Annie:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Jhin:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Nautilus:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Tank,
-                        RegionTag.Other,
+                        RegionTag.Bilgewater,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Warden },
+                        null);
                     break;
                 case KnownChampion.Karma:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Lux:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Ahri:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Olaf:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Viktor:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Singed:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Garen:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Anivia:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Maokai:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Lissandra:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Morgana:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Evelynn:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Fizz:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Heimerdinger:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle, PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Zed:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Rumble:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Mordekaiser:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities, PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Sona:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Controller,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Katarina:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.KogMaw:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Ashe:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Lulu:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Controller,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion, PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Karthus:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Alistar:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Darius:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Vayne:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Udyr:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal, PerkTag.Shapeshifter },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Varus:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Jayce:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Shapeshifter },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Leona:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Syndra:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Pantheon:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Khazix:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Riven:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Corki:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Caitlyn:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Azir:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion, PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Nidalee:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Shapeshifter, PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Kennen:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Galio:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Veigar:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Bard:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Controller,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Gnar:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle, PerkTag.Shapeshifter },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Malzahar:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Graves:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Vi:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Kayle:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Irelia:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.LeeSin:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Illaoi:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Elise:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion, PerkTag.Shapeshifter, PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Volibear:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Nunu:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Controller,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.TwistedFate:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Jax:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Shyvana:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Shapeshifter },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Kalista:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.DrMundo:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.TahmKench:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Diana:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Brand:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Sejuani:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Vladimir:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Zac:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.RekSai:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Quinn:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Akali:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Tristana:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Hecarim:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Sivir:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Lucian:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Rengar:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Warwick:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Skarner:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Malphite:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Tank,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Yasuo:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Xerath:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Teemo:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Yordle },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Renekton:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Nasus:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Fighter,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Draven:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "TODO",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null);
                     break;
                 case KnownChampion.Shaco:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        null);
                     break;
                 case KnownChampion.Swain:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Mage,
-                        RegionTag.Other,
+                        RegionTag.Noxus,
                         new HashSet<PerkTag> { PerkTag.Animal },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        null);
                     break;
                 case KnownChampion.Janna:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Controller,
-                        RegionTag.Other,
+                        RegionTag.Zaun,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Hextech, SkinTag.Victorious },
+                        null);
                     break;
                 case KnownChampion.Talon:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Slayer,
-                        RegionTag.Other,
+                        RegionTag.Noxus,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        null);
                     break;
                 case KnownChampion.Ziggs:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Mage,
-                        RegionTag.Other,
+                        RegionTag.Piltover,
                         new HashSet<PerkTag> { PerkTag.Yordle },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.PoolParty, SkinTag.SnowDay },
+                        null);
                     break;
                 case KnownChampion.Ekko:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Slayer,
-                        RegionTag.Other,
+                        RegionTag.Zaun,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.School },
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Jinx, "I had crush on her, but she went crazy :(" } });
                     break;
                 case KnownChampion.Orianna:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Mage,
-                        RegionTag.Other,
+                        RegionTag.Piltover,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Hearthseeker },
+                        null);
                     break;
                 case KnownChampion.FiddleSticks:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.GuardianOfTheSands },
+                        null);
                     break;
                 case KnownChampion.Fiora:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Fighter,
-                        RegionTag.Other,
+                        RegionTag.Damacia,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.School, SkinTag.Project },
+                        null);
                     break;
                 case KnownChampion.Chogath:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Tank,
-                        RegionTag.Other,
+                        RegionTag.Void,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Battlecast },
+                        null);
                     break;
                 case KnownChampion.Rammus:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Tank,
-                        RegionTag.Other,
+                        RegionTag.Shurima,
                         new HashSet<PerkTag> { PerkTag.Animal },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.GuardianOfTheSands },
+                        null);
                     break;
                 case KnownChampion.Leblanc:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Mage,
-                        RegionTag.Other,
+                        RegionTag.Noxus,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        null);
                     break;
                 case KnownChampion.Soraka:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Controller,
-                        RegionTag.Other,
+                        RegionTag.Ionia,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities, PerkTag.Global },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Bard, "You are looking for other Celestial Being." } });
                     break;
                 case KnownChampion.Zilean:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Mage,
                         RegionTag.Other,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.BloodMoon },
+                        null);
                     break;
                 case KnownChampion.Nocturne:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Slayer,
                         RegionTag.Other,
-                        new HashSet<PerkTag> { PerkTag.Global },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        null,
+                        null);
                     break;
                 case KnownChampion.Jinx:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Marksmen,
-                        RegionTag.Other,
+                        RegionTag.Piltover,
                         new HashSet<PerkTag> { PerkTag.Global },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Mafia },
+                        new Dictionary<KnownChampion, string> {
+                            { KnownChampion.Vi, "This looser cannot catch me :D" },
+                            { KnownChampion.Caitlyn, "This looser cannot catch me :D" }});
                     break;
                 case KnownChampion.Yorick:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Fighter,
-                        RegionTag.Other,
+                        RegionTag.ShadowIsles,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Pentakill },
+                        null);
                     break;
                 case KnownChampion.Urgot:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Marksmen,
-                        RegionTag.Other,
+                        RegionTag.Noxus,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Battlecast },
+                        null);
                     break;
                 case KnownChampion.Kindred:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Marksmen,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.SuperGalaxy },
+                        null);
                     break;
                 case KnownChampion.MissFortune:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Marksmen,
-                        RegionTag.Other,
+                        RegionTag.Bilgewater,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Mafia, SkinTag.Arcade },
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Gangplank, "I've defeated him in the GrugMug Grog Slog competition." } });
                     break;
                 case KnownChampion.MonkeyKing:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Fighter,
-                        RegionTag.Other,
+                        RegionTag.Ionia,
                         new HashSet<PerkTag> { PerkTag.Animal },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        null,
+                        new Dictionary<KnownChampion, string> { { KnownChampion.MasterYi, "He taught me Wuju style." } });
                     break;
                 case KnownChampion.Blitzcrank:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Controller,
-                        RegionTag.Other,
+                        RegionTag.Zaun,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Riot, SkinTag.Arcade },
+                        null);
                     break;
                 case KnownChampion.Shen:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Tank,
-                        RegionTag.Other,
+                        RegionTag.Ionia,
                         new HashSet<PerkTag> { PerkTag.Global },
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.BloodMoon },
+                        new Dictionary<KnownChampion, string> {
+                            { KnownChampion.Zed, "You are looking for my father's killer..." },
+                            { KnownChampion.Akali, "You are looking for another warrior of Kinokou Order." },
+                            { KnownChampion.Kennen, "You are looking for another warrior of Kinokou Order" }});
                     break;
                 case KnownChampion.Braum:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
-                        RoleTag.Tank,
-                        RegionTag.Other,
+                        "",
+                        RoleTag.Controller,
+                        RegionTag.Freljord,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Dragonslayer },
+                        null);
                     break;
                 case KnownChampion.XinZhao:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Fighter,
-                        RegionTag.Other,
+                        RegionTag.Damacia,
                         null,
-                        new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Tryndamere, "You are looking for my greatest creation. His rage will shape the world." } });
+                        new HashSet<SkinTag> { SkinTag.Commando, SkinTag.WarringKingdoms },
+                        null);
                     break;
                 case KnownChampion.Twitch:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Marksmen,
                         RegionTag.Zaun,
                         new HashSet<PerkTag> { PerkTag.Animal },
-                        new HashSet<SkinTag> { SkinTag.Vandal },
+                        new HashSet<SkinTag> { SkinTag.Vandal, SkinTag.Mafia },
                         null);
                     break;
                 case KnownChampion.MasterYi:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Slayer,
                         RegionTag.Ionia,
                         null,
@@ -1120,7 +1125,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Taric:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Controller,
                         RegionTag.MountTargon,
                         null,
@@ -1129,7 +1134,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Amumu:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Tank,
                         RegionTag.Shurima,
                         null,
@@ -1138,7 +1143,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Gangplank:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Fighter,
                         RegionTag.Bilgewater,
                         new HashSet<PerkTag> { PerkTag.Global },
@@ -1147,7 +1152,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Trundle:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Fighter,
                         RegionTag.Freljord,
                         null,
@@ -1156,7 +1161,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Kassadin:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Slayer,
                         RegionTag.Other,
                         null,
@@ -1172,7 +1177,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Velkoz:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Mage,
                         RegionTag.Void,
                         null,
@@ -1181,7 +1186,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Zyra:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Mage,
                         RegionTag.Other,
                         new HashSet<PerkTag> { PerkTag.PetChampion },
@@ -1190,7 +1195,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Nami:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Controller,
                         RegionTag.Other,
                         null,
@@ -1199,7 +1204,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.JarvanIV:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Fighter,
                         RegionTag.Damacia,
                         null,
@@ -1208,7 +1213,7 @@ namespace FindMyMain.Model.Answers
                     break;
                 case KnownChampion.Ezreal:
                     result = new ChampionDescription(champion,
-                        "True warriors are born in blood!",
+                        "",
                         RoleTag.Marksmen,
                         RegionTag.Piltover,
                         new HashSet<PerkTag> { PerkTag.Global },
