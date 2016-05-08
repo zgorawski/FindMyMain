@@ -1,6 +1,44 @@
-﻿function processAnswer(answerData) {
+﻿var fmmMainFound = false;
+var fmmAnswers = 0;
 
-    var chatMessage = 
+function fmmReload() {
+    alert("xaxa");
+    window.location.reload();
+}
+
+function processAnswer(answerData) {
+
+    if (answerData == undefined || fmmMainFound == true) {
+        return;
+    }
+
+    var chatMessage;
+
+    if (answerData.IsMain == true) {
+
+        fmmMainFound = true;
+
+        var youHaveFoundMsg = fmmAnswers == 0 ? 'You have found it on first try! ' : 'You have found it after ' + fmmAnswers + ' attepts. ';
+
+        chatMessage =
+        '<li class="row">' +
+            '<div class="media">' +
+                '<div class="media-left media-middle">' +
+                    '<img src="http://ddragon.leagueoflegends.com/cdn/' + answerData.GameVersion + '/img/profileicon/' + answerData.FellowIconId + '.png" class="img-circle media-left media-middle fmm-chatImage gold" />' +
+                '</div>' +
+                '<div class="media-body">' +
+                    '<p class="fmm-chatMessage gold">' + 'Bingo! ' + answerData.ChampionName + ' is ' + answerData.FellowName + '\'s main champion. ' + youHaveFoundMsg +
+                    '<input type="button" value="Play again?" onClick="window.location.reload()">' +
+                    '</p>' +
+                '</div>' +
+            '</div>' +
+        '</li>';
+
+    } else {
+
+        fmmAnswers++;
+
+        chatMessage =
         '<li class="row">' +
             '<div class="media">' +
                 '<div class="media-left media-middle">' +
@@ -11,8 +49,10 @@
                 '</div>' +
             '</div>' +
         '</li>';
+    }
 
     $('#fmm-chat').prepend(chatMessage);
+    $('#champion' + answerData.ChampionId + ' > img').fadeTo(500, 0.2);
 }
 
 // quick search regex

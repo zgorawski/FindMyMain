@@ -15,24 +15,6 @@ namespace FindMyMain.Extensions
             sb.AppendLine("<img src='" + imageUrl + "' alt='" + championName + "' />");
             sb.AppendLine("<figcaption>" + championName + "</figcaption>");
             sb.AppendLine("</figure>");
-
-            //var stringifiedTag = new HtmlString(sb.ToString());
-
-            //var figureBuilder = new TagBuilder("figure");
-            //figureBuilder.MergeAttributes(new RouteValueDictionary(htmlAttributes));
-            //figureBuilder.AddCssClass("championItem");
-
-            //var imgBuilder = new TagBuilder("img");
-            //imgBuilder.MergeAttribute("src", imageUrl);
-            //imgBuilder.MergeAttribute("alt", championName);
-
-            //var figcaptionBuilder = new TagBuilder("figcaption");
-            //figcaptionBuilder.SetInnerText(championName);
-
-            //figureBuilder.InnerHtml += imgBuilder.ToString(TagRenderMode.SelfClosing);
-            //figureBuilder.InnerHtml += figcaptionBuilder.ToString(TagRenderMode.SelfClosing);
-
-            //var stringifiedTag = figureBuilder.ToString(TagRenderMode.SelfClosing);
             
             var link = helper.ActionLink("[replaceme]", actionName, routeValues, ajaxOptions).ToHtmlString();
             return MvcHtmlString.Create(link.Replace("[replaceme]", sb.ToString()));

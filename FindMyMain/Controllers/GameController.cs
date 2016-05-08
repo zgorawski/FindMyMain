@@ -16,6 +16,8 @@ namespace FindMyMain.Controllers
     {
         const string TargetChampionId = "targetChampionId";
         const string GameVersion = "gameVersion";
+        const string FellowName = "fellowName";
+        const string FellowIcon = "fellowIcon";
 
         // GET: Play
         public ActionResult Play(Region? region = null, long? summonerId = null)
@@ -47,7 +49,10 @@ namespace FindMyMain.Controllers
             if (!summonersResult.isSuccess || summonersResult.value == null || summonersResult.value.Count == 0) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
 
             var fellowName = summonersResult.value[gameSeed.FellowPlayerId.ToString()].name;
+            Session[FellowName] = fellowName;
+
             var fellowIconId = summonersResult.value[gameSeed.FellowPlayerId.ToString()].profileIconId;
+            Session[FellowIcon] = fellowIconId;
 
             // prepare view model
             var allChampionsRequest = new AllChampionsRequest(region.Value);
@@ -77,18 +82,33 @@ namespace FindMyMain.Controllers
         public ActionResult SelectedChampion(int? championId)
         {
             var selectedChampion = KnownChampionUtility.TryCast(championId);
+
             var targetChampion = KnownChampionUtility.TryCast((int?)Session[TargetChampionId]);
             var gameVersion = (string)Session[GameVersion];
+            var fellowName = (string)Session[FellowName];
+            var fellowIcon = (int)Session[FellowIcon];
 
-            if (selectedChampion == null || targetChampion == null || string.IsNullOrEmpty(gameVersion)) { return Json(new AnswerViewModel() { Error = "Unknown champion" }); }
+            if (selectedChampion == null || targetChampion == null || string.IsNullOrEmpty(gameVersion) || string.IsNullOrEmpty(fellowName))
+            {
+                return Json(new AnswerViewModel() { Error = "Unknown champion" });
+            }
                         
             var answersEngine = new AnswersEngine();
             var answer = answersEngine.Answer(selectedChampion.Value, targetChampion.Value);
 
             // dirty
-            var championImgName = Enum.GetName(typeof(KnownChampion), selectedChampion);
+            var championImgName = Enum.GetName(typeof(KnownChampion), selectedChampion.Value);
 
-            var json = Json(new AnswerViewModel() { IsMain = false, Answer = answer, ChampionId = championId.Value, GameVersion = gameVersion, ChampionImageName = championImgName }, JsonRequestBehavior.AllowGet);
+            var json = Json(new AnswerViewModel() {
+                IsMain = (selectedChampion.Value == targetChampion.Value),
+                Answer = answer,
+                ChampionId = championId.Value,
+                GameVersion = gameVersion,
+                ChampionImageName = championImgName,
+                FellowName = fellowName,
+                FellowIconId = fellowIcon,
+                ChampionName = KnownChampionUtility.ChampionIdToName(championId.Value)
+            }, JsonRequestBehavior.AllowGet);
 
             return json;
         }
