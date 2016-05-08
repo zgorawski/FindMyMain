@@ -28,7 +28,7 @@ namespace FindMyMain.Model
     {
         public int PlayerChampionId { get; set; }
         public long FellowPlayerId { get; set; }
-        public int FellowPlayedChampionId { get; set; }
+        public int FellowPlayerChampionId { get; set; }
         public bool SameTeam { get; set; }
         public int NGamesAgo { get; set; }
 
@@ -50,7 +50,7 @@ namespace FindMyMain.Model
                 NGamesAgo = randomGameNumber + 1,
                 SameTeam = randomGame.teamId == randomFellow.teamId,
                 FellowPlayerId = randomFellow.summonerId,
-                FellowPlayedChampionId = randomFellow.championId
+                FellowPlayerChampionId = randomFellow.championId
             };
         }
     }

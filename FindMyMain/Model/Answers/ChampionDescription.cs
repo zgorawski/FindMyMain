@@ -79,7 +79,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.MountTargon,
                         null,
                         null,
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Shyvana, "We are somehow connected by kind" } });
+                        null);
                     break;
                 case KnownChampion.Cassiopeia:
                     result = new ChampionDescription(champion,
@@ -1152,7 +1152,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.Freljord,
                         null,
                         new HashSet<SkinTag> { SkinTag.Officer },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Lissandra, "You are looking for my allay" } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Lissandra, "You are looking for my ally" } });
                     break;
                 case KnownChampion.Kassadin:
                     result = new ChampionDescription(champion,
@@ -1167,7 +1167,7 @@ namespace FindMyMain.Model.Answers
                             { KnownChampion.Khazix, "I am trying to protect world from this creature..." },
                             { KnownChampion.Velkoz, "I am trying to protect world from this creature..." },
                             { KnownChampion.RekSai, "I am trying to protect world from this creature..." },
-                            { KnownChampion.Chogath, "I am trying to protect world from him" }
+                            { KnownChampion.Malzahar, "I am trying to protect world from him" }
                         });
                     break;
                 case KnownChampion.Velkoz:

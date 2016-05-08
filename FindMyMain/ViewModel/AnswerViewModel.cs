@@ -11,5 +11,7 @@ namespace FindMyMain.ViewModel
         public string Error { get; set; }
         public bool IsMain { get; set; }
         public string Answer { get; set; }
+        public string GameVersion { get; set; }
+        public string ChampionImageName { get; set; }
     }
 }

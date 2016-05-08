@@ -15,6 +15,7 @@ namespace FindMyMain.Controllers
     public class GameController : Controller
     {
         const string TargetChampionId = "targetChampionId";
+        const string GameVersion = "gameVersion";
 
         // GET: Play
         public ActionResult Play(Region? region = null, long? summonerId = null)
@@ -46,7 +47,8 @@ namespace FindMyMain.Controllers
             if (!summonersResult.isSuccess || summonersResult.value == null || summonersResult.value.Count == 0) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
 
             var fellowName = summonersResult.value[gameSeed.FellowPlayerId.ToString()].name;
-            
+            var fellowIconId = summonersResult.value[gameSeed.FellowPlayerId.ToString()].profileIconId;
+
             // prepare view model
             var allChampionsRequest = new AllChampionsRequest(region.Value);
             var allChampionsResult = apiConnection.PerformRequest<Champions>(allChampionsRequest);
@@ -55,16 +57,19 @@ namespace FindMyMain.Controllers
             var gameVersionsRequest = new GameVersionsRequest(region.Value);
             var gameVersionsResult = apiConnection.PerformRequest<List<string>>(gameVersionsRequest);
             if (!gameVersionsResult.isSuccess || gameVersionsResult.value.Count == 0) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
+            var gameVersion = gameVersionsResult.value.First();
+            Session[GameVersion] = gameVersion;
 
             return View(new GameViewModel()
             {
-                Champions = allChampionsResult.value.data.Values,
+                Champions = allChampionsResult.value.data.Values.OrderBy(x => x.name),
                 PlayerChampionName = KnownChampionUtility.ChampionIdToName(gameSeed.PlayerChampionId),
-                FellowPlayedChampionName = KnownChampionUtility.ChampionIdToName(gameSeed.FellowPlayedChampionId),
+                FellowPlayerChampionName = KnownChampionUtility.ChampionIdToName(gameSeed.FellowPlayerChampionId),
                 FellowPlayerName = fellowName,
+                FellowPlayerIconId = fellowIconId,
                 SameTeam = gameSeed.SameTeam,
                 NGamesAgo = gameSeed.NGamesAgo,
-                GameVersion = gameVersionsResult.value.First()
+                GameVersion = gameVersion
             });
         }
 
@@ -73,13 +78,17 @@ namespace FindMyMain.Controllers
         {
             var selectedChampion = KnownChampionUtility.TryCast(championId);
             var targetChampion = KnownChampionUtility.TryCast((int?)Session[TargetChampionId]);
+            var gameVersion = (string)Session[GameVersion];
 
-            if (selectedChampion == null || targetChampion == null) { return Json(new AnswerViewModel() { Error = "Unknown champion" }); }
+            if (selectedChampion == null || targetChampion == null || string.IsNullOrEmpty(gameVersion)) { return Json(new AnswerViewModel() { Error = "Unknown champion" }); }
                         
             var answersEngine = new AnswersEngine();
             var answer = answersEngine.Answer(selectedChampion.Value, targetChampion.Value);
 
-            var json = Json(new AnswerViewModel() { IsMain = false, Answer = answer, ChampionId = championId.Value }, JsonRequestBehavior.AllowGet);
+            // dirty
+            var championImgName = Enum.GetName(typeof(KnownChampion), selectedChampion);
+
+            var json = Json(new AnswerViewModel() { IsMain = false, Answer = answer, ChampionId = championId.Value, GameVersion = gameVersion, ChampionImageName = championImgName }, JsonRequestBehavior.AllowGet);
 
             return json;
         }

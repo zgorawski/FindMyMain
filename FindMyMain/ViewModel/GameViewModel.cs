@@ -10,7 +10,8 @@ namespace FindMyMain.ViewModel
     {
         public string PlayerChampionName { get; set; }
         public string FellowPlayerName { get; set; }
-        public string FellowPlayedChampionName { get; set; }
+        public string FellowPlayerChampionName { get; set; }
+        public int FellowPlayerIconId { get; set; }
         public bool SameTeam { get; set; }
         public int NGamesAgo { get; set; }
         public IEnumerable<Champion> Champions { get; set; }

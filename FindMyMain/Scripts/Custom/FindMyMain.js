@@ -1,20 +1,18 @@
 ﻿function processAnswer(answerData) {
-    
-    alert(answerData.Answer);
 
     var chatMessage = 
         '<li class="row">' +
             '<div class="media">' +
                 '<div class="media-left media-middle">' +
-                    '<img src="http://ddragon.leagueoflegends.com/cdn/6.8.1/img/champion/Aatrox.png" class="img-circle media-left media-middle fmm-img50" />' +
+                    '<img src="http://ddragon.leagueoflegends.com/cdn/' + answerData.GameVersion + '/img/champion/' + answerData.ChampionImageName + '.png" class="img-circle media-left media-middle fmm-chatImage indigo" />' +
                 '</div>' +
                 '<div class="media-body">' +
-                    '<p class="fmm-chatMessage">' + answerData.Answer + '</p>' +
+                    '<p class="fmm-chatMessage indigo">' + answerData.Answer + '</p>' +
                 '</div>' +
             '</div>' +
         '</li>';
 
-    $('#fmm-chat').append(chatMessage);
+    $('#fmm-chat').prepend(chatMessage);
 }
 
 // quick search regex

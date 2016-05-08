@@ -119,15 +119,16 @@ figure.championItem figcaption {
     text-align: center;
 }
 
-.fmm-img50 {
-    width: 50px;
+.fmm-chatImage {
+    width: 60px;
     padding: 0;
+    border: 3px solid;
 }
 
-.fmm-chatMessage {
+.jumbotron p.fmm-chatMessage {
     font-size: 16px;
     color: white;
-    background-color: darkblue;
+    padding: 4px;
 }
 
 @media (max-width: 992px) {
@@ -139,8 +140,31 @@ figure.championItem figcaption {
   }
 }
 
-.fmm-championsContainer {
+.fmm-90VH {
     overflow: scroll;
     overflow-x: hidden;
     height: 90vh;
+    overflow-y: auto;
 }
+
+/* COLORS */
+
+#fmm-chat img.indigo {
+    border-color: indigo;
+}
+
+#fmm-chat p.indigo {
+    background-color: indigo;
+    color: aliceblue;
+}
+
+#fmm-chat img.gold {
+    border-color: gold;
+}
+
+#fmm-chat p.gold {
+    background-color: gold;
+    color: darkred;
+}
+
+

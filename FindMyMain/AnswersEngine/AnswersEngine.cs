@@ -106,7 +106,7 @@ namespace FindMyMain.AnswersEngineNamespace
                 case RoleTag.Slayer:
                     return "We spot weakness and eliminate it";
                 case RoleTag.Mage:
-                    return "We dont get dirty - let the magic do the work";
+                    return "We don't get dirty - let the magic do the work";
                 case RoleTag.Controller:
                     return "Protecting allies, disturbing enemies - that's what we both do best";
                 case RoleTag.Marksmen:
