@@ -15,10 +15,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 padding-0">
-                                @Html.TextBoxFor(m => m.PlayerInput.SummonerName, new { @class = "fmm-w100h40", @placeholder = "summoner name" })
+                                @Html.TextBoxFor(m => m.PlayerInput.SummonerName, new { @class = "fmm-w100h40 fmm-input", @placeholder = "summoner name" })
                             </div>
                             <div class="col-md-3 padding-media">
-                                @Html.DropDownListFor(m => m.PlayerInput.Region, Model.AvailableRegions, new { @class = "fmm-w100h40" })
+                                @Html.DropDownListFor(m => m.PlayerInput.Region, Model.AvailableRegions, new { @class = "fmm-w100h40 fmm-input" })
                             </div>
                             <div class="col-md-3 padding-0">
                                 <button type="submit" class="fmm-w100h40 fmm-playButton">Play</button>
@@ -26,14 +26,13 @@
                         </div>
                     </div>
                 }
-
             </div>
 
             @if (!string.IsNullOrEmpty(Model.Error))
             {
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Error: @Model.Error</h2>
+                        <p class="fmm-error">Error: @Model.Error</p>
                     </div>
                 </div>
             }

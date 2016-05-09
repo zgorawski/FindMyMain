@@ -18,7 +18,7 @@ function processAnswer(answerData) {
 
         fmmMainFound = true;
 
-        var youHaveFoundMsg = fmmAnswers == 0 ? 'You have found it on first try! ' : 'You have found it after ' + fmmAnswers + ' attepts. ';
+        var youHaveFoundMsg = fmmAnswers == 0 ? 'You have found it on <em>first try!</em> ' : 'You have found it after <em>' + fmmAnswers + '</em> attepts. ';
 
         chatMessage =
         '<li class="row">' +
@@ -27,7 +27,7 @@ function processAnswer(answerData) {
                     '<img src="http://ddragon.leagueoflegends.com/cdn/' + answerData.GameVersion + '/img/profileicon/' + answerData.FellowIconId + '.png" class="img-circle media-left media-middle fmm-chatImage gold" />' +
                 '</div>' +
                 '<div class="media-body">' +
-                    '<p class="fmm-chatMessage gold">' + 'Bingo! ' + answerData.ChampionName + ' is ' + answerData.FellowName + '\'s main champion. ' + youHaveFoundMsg +
+                    '<p class="fmm-chatMessage gold">' + 'Bingo! <em>' + answerData.ChampionName + '</em> is <em>' + answerData.FellowName + '\'s</em> main champion. ' + youHaveFoundMsg +
                     '<input type="button" value="Play again?" onClick="window.location.reload()">' +
                     '</p>' +
                 '</div>' +

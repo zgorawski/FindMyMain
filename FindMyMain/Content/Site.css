@@ -117,6 +117,13 @@ figure.championItem figcaption {
     color: white;
     font-size: 14px;
     text-align: center;
+    max-width: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#fmm-chat {
+    padding-top: 31px;
 }
 
 .fmm-chatImage {
@@ -128,13 +135,14 @@ figure.championItem figcaption {
 .jumbotron p.fmm-chatMessage {
     font-size: 16px;
     color: white;
-    padding: 4px;
+    padding: 6px;
     margin: 0;
 }
 
 .jumbotron p.fmm-chatMessage em {
     font-size: 18px;
-    font-style: oblique;
+    font-weight: bold;
+    font-style: normal;
 }
 
 @media (max-width: 992px) {
@@ -173,4 +181,21 @@ figure.championItem figcaption {
     color: darkred;
 }
 
+p.fmm-error {
+    text-align: center;
+    font-size: 16px;
+    color: firebrick;
+    background-color: whitesmoke;
+    margin: 20px 15px 0 15px;
+    padding: 3px;
+}
 
+input.fmm-input,
+select.fmm-input {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#fmm-filter {
+    margin-left: 3px;
+}
