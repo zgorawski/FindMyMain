@@ -54,20 +54,20 @@ namespace FindMyMain.AnswersEngineNamespace
             switch (similaritesAnswers.Count)
             {
                 case 0:
-                    answerBuilder.Append("Looks like I dont have much in common with a champion you are looking for...");
+                    answerBuilder.Append("Looks like I don't have much in common with the champion you are looking for...");
                     break;
                 case 1:
-                    answerBuilder.Append("I got something in common with a champion you are looking for - ");
+                    answerBuilder.Append("I have something in common with the champion you are looking for - ");
                     answerBuilder.Append(similaritesAnswers[0]);
                     break;
                 case 2:
-                    answerBuilder.Append("I got matching points with a champion you are looking for - ");
+                    answerBuilder.Append("I have some matching points with the champion you are looking for - ");
                     answerBuilder.Append(similaritesAnswers[0]);
                     answerBuilder.Append(" and ");
                     answerBuilder.Append(similaritesAnswers[1]);
                     break;
                 case 3:
-                    answerBuilder.Append("Champion you are looking for is quite like me - ");
+                    answerBuilder.Append("The champion you are looking for is quite like me - ");
                     answerBuilder.Append(similaritesAnswers[0]);
                     answerBuilder.Append(" and ");
                     answerBuilder.Append(similaritesAnswers[1]);
@@ -75,7 +75,7 @@ namespace FindMyMain.AnswersEngineNamespace
                     answerBuilder.Append(similaritesAnswers[2]);
                     break;
                 case 4:
-                    answerBuilder.Append("Incredible! So much similarities - ");
+                    answerBuilder.Append("Incredible! So many similarities - ");
                     answerBuilder.Append(similaritesAnswers[0]);
                     answerBuilder.Append(" and ");
                     answerBuilder.Append(similaritesAnswers[1]);
@@ -100,17 +100,17 @@ namespace FindMyMain.AnswersEngineNamespace
             switch (selected.Role)
             {
                 case RoleTag.Tank:
-                    return "We are firsts who enter the battle and last to leave";
+                    return "We are the first to enter the battle and the last to leave";
                 case RoleTag.Fighter:
                     return "We are fighters, duh..";
                 case RoleTag.Slayer:
                     return "We spot weakness and eliminate it";
                 case RoleTag.Mage:
-                    return "We don't get dirty - let the magic do the work";
+                    return "We don't get dirty - we let the magic do the work";
                 case RoleTag.Controller:
-                    return "Protecting allies, disturbing enemies - that's what we both do best";
+                    return "Protecting allies, disturbing enemies - that's what we are best at";
                 case RoleTag.Marksmen:
-                    return "We both likes to throw, shoot and be on distance";
+                    return "We both like to throw, shoot and keep our distance";
                 default:
                     return null;
             }
@@ -120,37 +120,15 @@ namespace FindMyMain.AnswersEngineNamespace
         {
             if (selected.Region != target.Region) return null;
 
-            switch (selected.Region)
+            if (selected.Region == RegionTag.Other)
             {
-                case RegionTag.BandleCity:
-                    return "BandleCity";
-                case RegionTag.Bilgewater:
-                    return "Bilgewater";
-                case RegionTag.Damacia:
-                    return "Damacia";
-                case RegionTag.Freljord:
-                    return "Freljord";
-                case RegionTag.Ionia:
-                    return "Ionia";
-                case RegionTag.MountTargon:
-                    return "MountTargon";
-                case RegionTag.Noxus:
-                    return "Noxus";
-                case RegionTag.Piltover:
-                    return "Piltover";
-                case RegionTag.ShadowIsles:
-                    return "ShadowIsles";
-                case RegionTag.Shurima:
-                    return "Shurima";
-                case RegionTag.Zaun:
-                    return "Zaun";
-                case RegionTag.Void:
-                    return "Void";
-                case RegionTag.Other:
-                    return "Other";
-                default:
-                    return null;
+                return "we are both from unique places";
             }
+            else
+            {
+                var region = RegionTagUtility.Stringify(selected.Region);
+                return ((int)selected.Region % 2 == 1) ? "we are now in or have been to " + region : "we both have visited " + region;
+            }            
         }
 
         private string SamePerkAnswer(ChampionDescription selected, ChampionDescription target)
@@ -168,15 +146,15 @@ namespace FindMyMain.AnswersEngineNamespace
                     case PerkTag.Animal:
                         return "we are both influenced by animal soul";
                     case PerkTag.Shapeshifter:
-                        return "we can adopt - change ourselfs depending on circumstances";
+                        return "we can adapt - change ourselves depending on the circumstances";
                     case PerkTag.PetChampion:
                         return "we both have beings that aid us in a fight";
                     case PerkTag.HealthCostAbilities:
-                        return "in fight we pay with own blood!";
+                        return "in a fight we pay with our own blood!";
                     case PerkTag.Global:
-                        return "we can help our allies and punish enemies from vast distance";
+                        return "we can help our allies and punish enemies from a huge distance";
                     case PerkTag.Yordle:
-                        return "we are both a Yordle, to some degree at last";
+                        return "we both are Yordles, at least to some degree";
                     default:
                         return null;
                 }
@@ -192,9 +170,9 @@ namespace FindMyMain.AnswersEngineNamespace
             else
             {
                 var commonSkin = commonSkins.First();
-                var stringifiedCommonSkin = Enum.GetName(typeof(SkinTag), commonSkin);
-                
-                return $"sometimes we both fight in Runterra in {stringifiedCommonSkin} outfit";
+                var skinText = SkinTagUtility.Stringify(commonSkin);
+
+                return ((int)commonSkin % 2 == 1) ? "sometimes we both fight in Runterra in " + skinText + " outfit" : "We find " + skinText + " outfit very stylish";
             }
         }
     }

@@ -51,8 +51,8 @@ namespace FindMyMain.Model.Answers
                         null,
                         new HashSet<SkinTag> { SkinTag.Championship, SkinTag.BloodMoon },
                         new Dictionary<KnownChampion, string> {
-                            { KnownChampion.Nautilus, "We both likes to pull things" },
-                            { KnownChampion.Lucian, "I was this third..." }});
+                            { KnownChampion.Nautilus, "We both like to pull things!" },
+                            { KnownChampion.Lucian, "I have the soul of his wife." }});
                     break;
                 case KnownChampion.Tryndamere:
                     result = new ChampionDescription(champion,
@@ -89,8 +89,8 @@ namespace FindMyMain.Model.Answers
                         new HashSet<PerkTag> { PerkTag.Animal },
                         null,
                         new Dictionary<KnownChampion, string> {
-                            { KnownChampion.Sivir, "You are looking for one with whom I explored Shurima." },
-                            { KnownChampion.Katarina, "You are looking for another one from Du Couteau family." }});
+                            { KnownChampion.Sivir, "You are looking for the one with whom I explored the Shurima." },
+                            { KnownChampion.Katarina, "You are looking for the another one from the Du Couteau family." }});
                     break;
                 case KnownChampion.Poppy:
                     result = new ChampionDescription(champion,
@@ -108,7 +108,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.Other,
                         null,
                         new HashSet<SkinTag> { SkinTag.School, SkinTag.Pirate },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Nocturne, "I've once fight him in a movie" } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Nocturne, "I've once fought him in a movie." } });
                     break;
                 case KnownChampion.Sion:
                     result = new ChampionDescription(champion,
@@ -117,7 +117,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.Noxus,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha, SkinTag.Hextech },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Galio, "What?! His main champion is my oposite - damacian eternal guardian?" } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Galio, "What?! His main champion is my oposite - damacian eternal guardian??" } });
                     break;
                 case KnownChampion.Annie:
                     result = new ChampionDescription(champion,
@@ -243,7 +243,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.Noxus,
                         null,
                         new HashSet<SkinTag> { SkinTag.Victorious },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Kayle, "I want to deafeat her again and again" } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Kayle, "I want to beat her again and again" } });
                     break;
                 case KnownChampion.Evelynn:
                     result = new ChampionDescription(champion,
@@ -333,7 +333,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.Freljord,
                         new HashSet<PerkTag> { PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Sweetheart, SkinTag.Marauder },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Lissandra, "There can only be one queen!" } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Lissandra, "There can be only one queen!" } });
                     break;
                 case KnownChampion.Lulu:
                     result = new ChampionDescription(champion,
@@ -405,7 +405,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.Piltover,
                         new HashSet<PerkTag> { PerkTag.Shapeshifter },
                         null,
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Heimerdinger, "Ah, yes, once I borrowed some 'hexpertise' from him " } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Heimerdinger, "Ah, yes, I've borrowed some 'hexpertise' from him once." } });
                     break;
                 case KnownChampion.Leona:
                     result = new ChampionDescription(champion,
@@ -414,7 +414,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.MountTargon,
                         null,
                         new HashSet<SkinTag> { SkinTag.PoolParty },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Diana, "Now you should know what her main champion is" } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Diana, "Night was chosen over day..." } });
                     break;
                 case KnownChampion.Syndra:
                     result = new ChampionDescription(champion,
@@ -541,11 +541,11 @@ namespace FindMyMain.Model.Answers
                         new HashSet<PerkTag> { PerkTag.PetChampion },
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> {
-                            { KnownChampion.Chogath, "Ahh! You are looking for one from the Void." },
-                            { KnownChampion.KogMaw, "Ahh! You are looking for one from the Void." },
-                            { KnownChampion.Khazix, "Ahh! You are looking for one from the Void." },
-                            { KnownChampion.Velkoz, "Ahh! You are looking for one from the Void." },
-                            { KnownChampion.RekSai, "Ahh! You are looking for one from the Void." },
+                            { KnownChampion.Chogath, "Ahh! You are looking for the one from the Void." },
+                            { KnownChampion.KogMaw, "Ahh! You are looking for the one from the Void." },
+                            { KnownChampion.Khazix, "Ahh! You are looking for the one from the Void." },
+                            { KnownChampion.Velkoz, "Ahh! You are looking for the one from the Void." },
+                            { KnownChampion.RekSai, "Ahh! You are looking for the one from the Void." },
                             { KnownChampion.Malzahar, "I've send his daughter into the Void" }
                         });
                     break;
@@ -693,7 +693,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.MountTargon,
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Leona, "Day was choosen over night..." } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Leona, "Day was chosen over night..." } });
                     break;
                 case KnownChampion.Brand:
                     result = new ChampionDescription(champion,
@@ -719,7 +719,7 @@ namespace FindMyMain.Model.Answers
                         RoleTag.Mage,
                         RegionTag.Noxus,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities },
-                        new HashSet<SkinTag> { SkinTag.School, SkinTag.Vandal },
+                        new HashSet<SkinTag> { SkinTag.Academy, SkinTag.Vandal },
                         null);
                     break;
                 case KnownChampion.Zac:
@@ -935,7 +935,7 @@ namespace FindMyMain.Model.Answers
                         RoleTag.Slayer,
                         RegionTag.Zaun,
                         null,
-                        new HashSet<SkinTag> { SkinTag.School },
+                        new HashSet<SkinTag> { SkinTag.Academy },
                         new Dictionary<KnownChampion, string> { { KnownChampion.Jinx, "I had crush on her, but she went crazy :(" } });
                     break;
                 case KnownChampion.Orianna:
@@ -999,7 +999,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.Ionia,
                         new HashSet<PerkTag> { PerkTag.HealthCostAbilities, PerkTag.Global },
                         new HashSet<SkinTag> { SkinTag.Program },
-                        new Dictionary<KnownChampion, string> { { KnownChampion.Bard, "You are looking for other Celestial Being." } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.Bard, "You are looking for another Celestial Being." } });
                     break;
                 case KnownChampion.Zilean:
                     result = new ChampionDescription(champion,
@@ -1073,7 +1073,7 @@ namespace FindMyMain.Model.Answers
                         RegionTag.Ionia,
                         new HashSet<PerkTag> { PerkTag.Animal },
                         null,
-                        new Dictionary<KnownChampion, string> { { KnownChampion.MasterYi, "He taught me Wuju style." } });
+                        new Dictionary<KnownChampion, string> { { KnownChampion.MasterYi, "He taught me the Wuju style." } });
                     break;
                 case KnownChampion.Blitzcrank:
                     result = new ChampionDescription(champion,
@@ -1176,12 +1176,12 @@ namespace FindMyMain.Model.Answers
                         null,
                         new HashSet<SkinTag> { SkinTag.Mecha },
                         new Dictionary<KnownChampion, string> {
-                            { KnownChampion.Chogath, "I am trying to protect world from this creature..." },
-                            { KnownChampion.KogMaw, "I am trying to protect world from this creature..." },
-                            { KnownChampion.Khazix, "I am trying to protect world from this creature..." },
-                            { KnownChampion.Velkoz, "I am trying to protect world from this creature..." },
-                            { KnownChampion.RekSai, "I am trying to protect world from this creature..." },
-                            { KnownChampion.Malzahar, "I am trying to protect world from him" }
+                            { KnownChampion.Chogath, "I'm trying to protect the world from this creature." },
+                            { KnownChampion.KogMaw, "I'm trying to protect the world from this creature." },
+                            { KnownChampion.Khazix, "I'm trying to protect the world from this creature." },
+                            { KnownChampion.Velkoz, "I'm trying to protect the world from this creature." },
+                            { KnownChampion.RekSai, "I'm trying to protect the world from this creature." },
+                            { KnownChampion.Malzahar, "I'm trying to protect the world from him" }
                         });
                     break;
                 case KnownChampion.Velkoz:
