@@ -205,10 +205,10 @@
     <Content Include="Content\Images\bg.png" />
     <Content Include="Content\Images\bg2.png" />
     <Content Include="Content\Images\logo.png" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="favicon.ico" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\FindMyMain.pubxml" />
