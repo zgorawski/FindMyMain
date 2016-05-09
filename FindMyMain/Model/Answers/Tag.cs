@@ -15,5 +15,8 @@ public enum PerkTag
 
 public enum SkinTag
 {
-    Victorious, SnowDay, PoolParty, Hearthseeker, GuardianOfTheSands, Pentakill, SuperGalaxy, Mafia, Arcade, Riot, Warden, Vandal, Battlecast, Commando, Dragonslayer, Project, Hextech, Officer, Headhunter, Mecha, Championship, BloodMoon, WarringKingdoms, Christmas, School, Pirate, Debonair, Cards
+    HighNoon, Victorious, ChineseNewYear, Sweetheart, SnowDay, PoolParty, Hearthseeker, GuardianOfTheSands, Pentakill, SuperGalaxy,
+    Mafia, Arcade, RiotSquad, Warden, Vandal, Battlecast, Commando, Dragonslayer, Project, Hextech, Officer, Headhunter, Mecha,
+    Championship, BloodMoon, WarringKingdoms, Christmas, School, Pirate, Debonair, Cards, OrderOfLotus,
+    SteelLegion, Academy, Marauder, Haunted, Program, DefinitelyNot, Arclight, Medical
 }
