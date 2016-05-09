@@ -31,7 +31,7 @@ namespace FindMyMain.Controllers
             if (!Enum.IsDefined(typeof(Region), viewModel.PlayerInput.Region) ||
                 string.IsNullOrWhiteSpace(viewModel.PlayerInput.SummonerName))
             {
-                return RedirectToAction("Index", new { error = "Something is wrong with provided summoner name or region" });
+                return RedirectToAction("Index", new { error = "Something is wrong with the provided summoner name or region." });
             }
 
             var region = (Region)viewModel.PlayerInput.Region;

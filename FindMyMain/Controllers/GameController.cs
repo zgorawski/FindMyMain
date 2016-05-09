@@ -19,6 +19,8 @@ namespace FindMyMain.Controllers
         const string FellowName = "fellowName";
         const string FellowIcon = "fellowIcon";
 
+        const string ErrorMessage = "Failed to prepare the game. Please try again.";
+
         // GET: Play
         public ActionResult Play(Region? region = null, long? summonerId = null)
         {
@@ -32,12 +34,12 @@ namespace FindMyMain.Controllers
 
             // generate game seed
             var gameSeed = GameSeed.GenerateGameSeed(recentGamesResult.value.games);
-            if (!recentGamesResult.isSuccess || gameSeed == null ) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
+            if (!recentGamesResult.isSuccess || gameSeed == null ) { return RedirectToAction("Index", "Home", new { error = ErrorMessage }); }
 
             // get main champion of player from seed
             var topMasteryRequest = new TopChampionMasteryRequest(region.Value, gameSeed.FellowPlayerId);
             var topMasteryResult = apiConnection.PerformRequest<List<Mastery>>(topMasteryRequest);
-            if (!topMasteryResult.isSuccess || topMasteryResult.value.Count == 0) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
+            if (!topMasteryResult.isSuccess || topMasteryResult.value.Count == 0) { return RedirectToAction("Index", "Home", new { error = ErrorMessage }); }
 
             var targetChampionId = topMasteryResult.value.FirstOrDefault().championId; 
             gameSeed.TargetChampionId = targetChampionId;
@@ -46,7 +48,7 @@ namespace FindMyMain.Controllers
             // get name of player from seed
             var summonerRequest = new GetSummonerRequest(region.Value, gameSeed.FellowPlayerId);
             var summonersResult = apiConnection.PerformRequest<Dictionary<string, Summoner>>(summonerRequest);
-            if (!summonersResult.isSuccess || summonersResult.value == null || summonersResult.value.Count == 0) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
+            if (!summonersResult.isSuccess || summonersResult.value == null || summonersResult.value.Count == 0) { return RedirectToAction("Index", "Home", new { error = ErrorMessage }); }
 
             var fellowName = summonersResult.value[gameSeed.FellowPlayerId.ToString()].name;
             Session[FellowName] = fellowName;
@@ -57,11 +59,11 @@ namespace FindMyMain.Controllers
             // prepare view model
             var allChampionsRequest = new AllChampionsRequest(region.Value);
             var allChampionsResult = apiConnection.PerformRequest<Champions>(allChampionsRequest);
-            if (!allChampionsResult.isSuccess) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
+            if (!allChampionsResult.isSuccess) { return RedirectToAction("Index", "Home", new { error = ErrorMessage }); }
 
             var gameVersionsRequest = new GameVersionsRequest(region.Value);
             var gameVersionsResult = apiConnection.PerformRequest<List<string>>(gameVersionsRequest);
-            if (!gameVersionsResult.isSuccess || gameVersionsResult.value.Count == 0) { return RedirectToAction("Index", "Home", "Failed to prepare a game"); }
+            if (!gameVersionsResult.isSuccess || gameVersionsResult.value.Count == 0) { return RedirectToAction("Index", "Home", new { error = ErrorMessage }); }
             var gameVersion = gameVersionsResult.value.First();
             Session[GameVersion] = gameVersion;
 
