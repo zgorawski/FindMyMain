@@ -9,6 +9,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using FindMyMain.ViewModel;
+using System.Text.RegularExpressions;
 
 namespace FindMyMain.Controllers
 {
@@ -36,14 +37,15 @@ namespace FindMyMain.Controllers
 
             var region = (Region)viewModel.PlayerInput.Region;
             var summonerName = viewModel.PlayerInput.SummonerName;
+            var trimmedSummonerName = Regex.Replace(summonerName, @"\s+", "");
 
             var apiConnection = new RiotAPIConnection();
 
             var summonerRequest = new GetSummonerByNameRequest(region, summonerName);
             var summonersResult = apiConnection.PerformRequest<Dictionary<string, Summoner>>(summonerRequest);
-            if (summonersResult.isSuccess && summonersResult.value != null && summonersResult.value.ContainsKey(summonerName) )
+            if (summonersResult.isSuccess && summonersResult.value != null && summonersResult.value.ContainsKey(trimmedSummonerName) )
             {
-                var summoner = summonersResult.value[summonerName];
+                var summoner = summonersResult.value[trimmedSummonerName];
                 return RedirectToAction("Play", "Game", new { region = region, summonerId = summoner.id });
             }
             else
